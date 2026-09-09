@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
 /**
- * Batch-translate UI strings via the Lovable AI Gateway.
+ * Batch-translate UI strings via the Google Gemini API.
  * Key stays server-side. Returns translations in the same order.
  */
 export const translateTexts = createServerFn({ method: "POST" })
@@ -16,11 +16,11 @@ export const translateTexts = createServerFn({ method: "POST" })
   )
   .handler(async ({ data }) => {
     if (data.target === "English") return { translations: data.texts };
-    const key = process.env.LOVABLE_API_KEY;
+    const key = process.env.GEMINI_API_KEY;
     if (!key) return { translations: data.texts };
 
     try {
-      const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+      const res = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${key}`,

@@ -3,7 +3,7 @@ import { z } from "zod";
 
 /**
  * Convert an uploaded dog photo into a Ghibli-style portrait
- * using the Lovable AI Gateway (Gemini image model). Key stays server-side.
+ * using the Google Gemini API (Gemini image model). Key stays server-side.
  */
 export const convertToGhibli = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) =>
@@ -15,12 +15,12 @@ export const convertToGhibli = createServerFn({ method: "POST" })
       .parse(input)
   )
   .handler(async ({ data }) => {
-    const key = process.env.LOVABLE_API_KEY;
-    if (!key) throw new Error("Missing LOVABLE_API_KEY");
+    const key = process.env.GEMINI_API_KEY;
+    if (!key) throw new Error("Missing GEMINI_API_KEY");
 
     const dataUrl = `data:${data.mime};base64,${data.base64}`;
 
-    const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    const res = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${key}`,
