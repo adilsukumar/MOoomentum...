@@ -3,7 +3,7 @@ import AppShell from "@/components/AppShell";
 import { useEffect, useState, type ReactNode } from "react";
 import { getSpecies } from "@/lib/species";
 import {
-  Microscope, Activity, Thermometer, MapPin, Wind, Sun, GitMerge,
+  Microscope, Activity, Thermometer, Droplets, MapPin, Wind, Sun, GitMerge,
   Bluetooth, BatteryMedium, PawPrint, Search, SlidersHorizontal,
   ChevronDown, ArrowUpRight, HeartHandshake, Stethoscope, type LucideIcon,
 } from "lucide-react";
@@ -103,7 +103,9 @@ const sensors: Sensor[] = [
   { Icon: Activity, accent: GREEN_ICON, iconBg: GREEN_BG, to: "/motion-sense",
     en: "MotionSense", subEn: "Activity Track", valEn: "—" },
   { Icon: Thermometer, accent: GREEN_ICON, iconBg: GREEN_BG, to: "/temp-sense",
-    en: "TempSense AI", subEn: "Body Temp", valEn: "—" },
+    en: "TempSense AI", subEn: "Ambient Temp", valEn: "—" },
+  { Icon: Droplets, accent: GREEN_ICON, iconBg: GREEN_BG, to: "/temp-sense",
+    en: "HumiditySense", subEn: "Relative Humidity", valEn: "—" },
   { Icon: MapPin, accent: GREEN_ICON, iconBg: GREEN_BG, to: "/map",
     en: "LocationSense", subEn: "GPS + Map", valEn: "—" },
   { Icon: Wind, accent: GREEN_ICON, iconBg: GREEN_BG, to: "/pressure-sense",
@@ -120,7 +122,7 @@ function Home() {
   const [factIdx, setFactIdx] = useState(0);
   const [query, setQuery] = useState("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
-  const { state: collarState, live, battery, connect, disconnect, receiving, error: collarError } = useCollar();
+  const { state: collarState, live, capabilities, battery, connect, disconnect, receiving, error: collarError } = useCollar();
 
   const { pet } = usePet();
   const sp = getSpecies(pet.species);
@@ -137,8 +139,10 @@ function Home() {
 
   const fact = sp.facts[factIdx % sp.facts.length];
   // Data-completeness score: only computed from real collar readings.
-  const activeSensors = (Object.keys(live) as (keyof typeof live)[]).filter((k) => live[k]).length;
-  const score = receiving ? Math.round((activeSensors / 5) * 100) : null;
+  const activeSensors = capabilities.filter((key) => live[key] != null).length;
+  const score = receiving && capabilities.length > 0
+    ? Math.round((activeSensors / capabilities.length) * 100)
+    : null;
 
   const petName = displayName(pet, `My ${sp.label}`);
   const mood = pet.name?.trim() ? `${petName} is feeling great` : "Feeling great";
@@ -156,9 +160,10 @@ function Home() {
       if (collarState !== "connected") return { ...s, valEn: "—", noteEn: undefined, progress: undefined };
       const liveFor: Record<string, string | undefined> = {
         "TempSense AI": live.temp ? `${live.temp.value}${live.temp.unit}` : undefined,
-        MotionSense: live.motion ? `${live.motion.value.toLocaleString()} steps` : undefined,
+        HumiditySense: live.humidity ? `${live.humidity.value}${live.humidity.unit}` : undefined,
+        MotionSense: live.motion ? `${live.motion.value.toFixed(2)} ${live.motion.unit}` : undefined,
         PressureSense: live.pressure ? `${live.pressure.value} ${live.pressure.unit}` : undefined,
-        LightSense: live.light ? `${live.light.value} ${live.light.unit}` : undefined,
+        "LightSense AI": live.light ? `${live.light.value} ${live.light.unit}` : undefined,
         CombineSense: score != null ? `${score}/100` : undefined,
       };
       const lv = liveFor[s.en];
@@ -304,7 +309,7 @@ function Home() {
               </span>
                <span style={{ fontSize: 10, fontWeight: 700, color: "var(--primary-foreground)", letterSpacing: "0.08em" }}>LIVE</span>
               <span style={{ fontSize: 11, color: "rgba(255,255,255,0.8)" }}>
-                {receiving ? `· ${activeSensors} of 5 sensors reporting` : "· Waiting for collar data"}
+                {receiving ? `· ${activeSensors} of ${capabilities.length} supported sensors reporting` : "· Waiting for collar data"}
               </span>
             </div>
              <span style={{ fontSize: 24, fontWeight: 500, color: "var(--primary-foreground)", fontVariantNumeric: "tabular-nums", fontFamily: "var(--font-display)" }}>

@@ -12,6 +12,7 @@ export function LiveSensorBody({
   decimals = 1,
   note,
   icon,
+  showHistory = true,
 }: {
   sensor: SensorKey;
   labelEn: string;
@@ -19,6 +20,7 @@ export function LiveSensorBody({
   decimals?: number;
   note?: string;
   icon?: ReactNode;
+  showHistory?: boolean;
 }) {
   const { live } = useCollar();
   const reading = live[sensor];
@@ -54,13 +56,15 @@ export function LiveSensorBody({
         ) : null}
       </Card>
 
-      <Card>
-        <SectionLabel jp="History" en="History" />
-        <NoData
-          title="No history recorded yet"
-          hint="Trends and daily summaries will build up here as your collar keeps reporting."
-        />
-      </Card>
+      {showHistory && (
+        <Card>
+          <SectionLabel jp="History" en="History" />
+          <NoData
+            title="No history recorded yet"
+            hint="Trends and daily summaries will build up here as your collar keeps reporting."
+          />
+        </Card>
+      )}
     </>
   );
 }

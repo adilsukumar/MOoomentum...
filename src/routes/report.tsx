@@ -65,10 +65,10 @@ function Report() {
   const motionPoints = getSeries("motion", windowMs[tab]);
   const pressurePoints = getSeries("pressure", windowMs[tab]);
   const tempData = series("temp");
-  const stepsData = series("motion");
+  const motionData = series("motion");
   const pressureData = series("pressure");
   const avgTemp = average(tempPoints);
-  const avgSteps = average(motionPoints);
+  const avgMotion = average(motionPoints);
   const avgPressure = average(pressurePoints);
 
   return (
@@ -89,7 +89,7 @@ function Report() {
 
         <div style={{ position: "relative", zIndex: 1 }}>
           <HeroBanner pet={pet} />
-          <HeroCard avgTemp={avgTemp} avgSteps={avgSteps} avgPressure={avgPressure} />
+          <HeroCard avgTemp={avgTemp} avgMotion={avgMotion} avgPressure={avgPressure} />
 
           {/* Time filter tabs */}
           <div
@@ -165,20 +165,20 @@ function Report() {
             )}
           </ChartCard>
 
-          {/* Activity Steps */}
+          {/* Movement intensity */}
           <ChartCard
             accent={C.tan}
             icon={<Footprints size={18} color={C.kombu} />}
-            titleJp="運動・歩数"
-            titleEn="Activity Steps"
-            chipText={avgSteps == null ? "—" : `Avg ${Math.round(avgSteps).toLocaleString()}`}
+            titleJp="動きの強度"
+            titleEn="Movement Intensity"
+            chipText={avgMotion == null ? "—" : `Avg ${avgMotion.toFixed(2)} m/s²`}
             chipBg="color-mix(in oklab, var(--acc-strong) 30.0%, transparent)"
             chipBorder="color-mix(in oklab, var(--acc-strong) 60.0%, transparent)"
             chipColor={C.cafe}
           >
-            {stepsData.length === 0 ? <EmptyChart /> : (
+            {motionData.length === 0 ? <EmptyChart /> : (
             <ResponsiveContainer width="100%" height={160}>
-              <BarChart data={stepsData} margin={{ top: 8, right: 8, left: -16, bottom: 0 }}>
+              <BarChart data={motionData} margin={{ top: 8, right: 8, left: -16, bottom: 0 }}>
                 <defs>
                   <linearGradient id="stepsFill" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor={C.kombu} stopOpacity={1} />
@@ -188,9 +188,7 @@ function Report() {
                 <CartesianGrid strokeDasharray="3 3" stroke="color-mix(in oklab, var(--acc-deep) 10.0%, transparent)" vertical={false} />
                 <XAxis dataKey="d" tick={{ fill: C.moss, fontSize: 10 }} axisLine={false} tickLine={false} />
                 <YAxis tick={{ fill: C.moss, fontSize: 10 }} axisLine={false} tickLine={false} />
-                <ReferenceLine y={3000} stroke={C.kombu} strokeDasharray="4 4" strokeOpacity={0.4}
-                  label={{ value: t("目標", "Goal"), position: "right", fill: C.kombu, fontSize: 10 }} />
-                <Tooltip content={<NiceTooltip suffix="" />} />
+                <Tooltip content={<NiceTooltip suffix=" m/s²" />} />
                 <Bar dataKey="v" fill="url(#stepsFill)" radius={[6, 6, 0, 0]} isAnimationActive={false} />
               </BarChart>
             </ResponsiveContainer>
@@ -254,13 +252,15 @@ function EmptyChart() {
   );
 }
 
-function HeroCard({ avgTemp, avgSteps, avgPressure }: {
-  avgTemp: number | null; avgSteps: number | null; avgPressure: number | null;
+function HeroCard({ avgTemp, avgMotion, avgPressure }: {
+  avgTemp: number | null; avgMotion: number | null; avgPressure: number | null;
 }) {
   const t = useT();
-  const { connected, receiving, live } = useCollar();
-  const active = (Object.keys(live) as (keyof typeof live)[]).filter((k) => live[k]).length;
-  const score = receiving ? Math.round((active / 5) * 100) : null;
+  const { connected, receiving, live, capabilities } = useCollar();
+  const active = capabilities.filter((key) => live[key] != null).length;
+  const score = receiving && capabilities.length > 0
+    ? Math.round((active / capabilities.length) * 100)
+    : null;
   const r = 44;
   const circ = 2 * Math.PI * r;
   const offset = circ - ((score ?? 0) / 100) * circ;
@@ -292,10 +292,10 @@ function HeroCard({ avgTemp, avgSteps, avgPressure }: {
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <StatRow icon={<Thermometer size={16} color={C.kombu} />}
-              labelJp="体温" labelEn="Avg Temp" value={avgTemp == null ? "—" : `${avgTemp.toFixed(1)}°C`} />
+              labelJp="周囲温度" labelEn="Avg Ambient Temp" value={avgTemp == null ? "—" : `${avgTemp.toFixed(1)}°C`} />
             <div style={{ height: 1, background: "color-mix(in oklab, var(--acc-deep) 20.0%, transparent)" }} />
             <StatRow icon={<Footprints size={16} color={C.kombu} />}
-              labelJp="歩数" labelEn="Avg Motion" value={avgSteps == null ? "—" : Math.round(avgSteps).toLocaleString()} />
+              labelJp="動き" labelEn="Avg Motion" value={avgMotion == null ? "—" : `${avgMotion.toFixed(2)} m/s²`} />
             <div style={{ height: 1, background: "color-mix(in oklab, var(--acc-deep) 20.0%, transparent)" }} />
             <StatRow icon={<Activity size={16} color={C.kombu} />}
               labelJp="圧力" labelEn="Avg Pressure" value={avgPressure == null ? "—" : avgPressure.toFixed(1)} />
@@ -309,7 +309,7 @@ function HeroCard({ avgTemp, avgSteps, avgPressure }: {
             <CheckCircle2 size={14} color={C.moss} />
             <span style={{ fontSize: 12, color: C.moss, fontWeight: 600 }}>
               {connected
-                ? t("センサー受信中", `${active} of 5 sensors reporting`)
+                ? t("センサー受信中", `${active} of ${capabilities.length} supported sensors reporting`)
                 : t("首輪が未接続です", "Collar not connected")}
             </span>
           </div>

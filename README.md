@@ -498,3 +498,26 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Vercel deployment
+
+This TanStack Start app uses Nitro's Vercel runtime adapter. Import the GitHub
+repository in Vercel with the **TanStack Start** framework preset; no custom
+output directory is required. Use Node.js 20 or newer.
+
+Configure these server-only environment variables in every required Vercel
+environment (Production, Preview, and Development):
+
+- `PAWSITIVE_BACKEND_URL`
+- `PAWSITIVE_API_KEY`
+- `GPS_READ_API_KEY`
+- `TRACKER_API_KEY`
+- `GEMINI_API_KEY` and `REPLICATE_API_KEY` when those integrations are enabled
+
+Do not prefix secrets with `VITE_`; Vite exposes prefixed values to browsers.
+Web Bluetooth requires the HTTPS deployment and a supported Chromium browser.
+
+```sh
+bun install --frozen-lockfile
+bun run build
+```

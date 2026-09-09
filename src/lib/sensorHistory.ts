@@ -3,7 +3,7 @@
  * appended here (localStorage). Nothing is generated or simulated — if the
  * collar has never sent data, the history is empty and the UI says so.
  */
-export type HistoryKey = "skin" | "motion" | "temp" | "pressure" | "light";
+export type HistoryKey = "skin" | "motion" | "temp" | "humidity" | "pressure" | "light";
 
 export interface HistoryPoint {
   t: number; // epoch ms
