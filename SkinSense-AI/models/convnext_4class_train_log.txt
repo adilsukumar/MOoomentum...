@@ -1,0 +1,37 @@
+﻿python.exe : Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher 
+rate limits and faster downloads.
+At line:1 char:337
++ ... nSense_ML"; & ".\.venv\Scripts\python.exe" "D:\22_SkinSense_ML\script ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: You ar...ster downloads.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Classes (4): ['Allergic_dermatitis', 'Demodicosis', 'Fungal_infection', 'Healthy']  [excluded: ['Bacterial_dermatosis']]
+  train: 5992 images
+  val: 1221 images
+  test: 1329 images
+[convnext_tiny] epoch 1/18  train_loss=0.7283  val_acc=0.8419  val_macroF1=0.8504  (82.9s)
+[convnext_tiny] epoch 2/18  train_loss=0.4578  val_acc=0.9017  val_macroF1=0.9081  (156.6s)
+[convnext_tiny] epoch 3/18  train_loss=0.4410  val_acc=0.8591  val_macroF1=0.8644  (156.9s)
+[convnext_tiny] epoch 4/18  train_loss=0.4238  val_acc=0.8690  val_macroF1=0.8726  (155.0s)
+[convnext_tiny] epoch 5/18  train_loss=0.4087  val_acc=0.9115  val_macroF1=0.9151  (154.6s)
+[convnext_tiny] epoch 6/18  train_loss=0.4070  val_acc=0.8673  val_macroF1=0.8730  (153.0s)
+[convnext_tiny] epoch 7/18  train_loss=0.3959  val_acc=0.8993  val_macroF1=0.9012  (153.9s)
+[convnext_tiny] epoch 8/18  train_loss=0.4020  val_acc=0.8984  val_macroF1=0.9031  (153.2s)
+[convnext_tiny] epoch 9/18  train_loss=0.3896  val_acc=0.9345  val_macroF1=0.9387  (153.2s)
+[convnext_tiny] epoch 10/18  train_loss=0.3873  val_acc=0.9181  val_macroF1=0.9199  (152.3s)
+[convnext_tiny] epoch 11/18  train_loss=0.3824  val_acc=0.9287  val_macroF1=0.9327  (152.1s)
+[convnext_tiny] epoch 12/18  train_loss=0.3829  val_acc=0.9361  val_macroF1=0.9376  (147.8s)
+[convnext_tiny] epoch 13/18  train_loss=0.3804  val_acc=0.9402  val_macroF1=0.9423  (110.1s)
+[convnext_tiny] epoch 14/18  train_loss=0.3800  val_acc=0.9402  val_macroF1=0.9441  (153.9s)
+[convnext_tiny] epoch 15/18  train_loss=0.3784  val_acc=0.9337  val_macroF1=0.9347  (153.9s)
+[convnext_tiny] epoch 16/18  train_loss=0.3784  val_acc=0.9353  val_macroF1=0.9363  (154.2s)
+[convnext_tiny] epoch 17/18  train_loss=0.3785  val_acc=0.9435  val_macroF1=0.9464  (152.2s)
+[convnext_tiny] epoch 18/18  train_loss=0.3782  val_acc=0.9435  val_macroF1=0.9464  (153.4s)
+
+=== [convnext_tiny] TEST SET RESULTS ===
+Accuracy: 0.9074   Macro-F1: 0.9136
+  Allergic_dermatitis    precision=0.900  recall=0.839  f1=0.868  support=354
+  Demodicosis            precision=0.964  recall=0.968  f1=0.966  support=252
+  Fungal_infection       precision=0.897  recall=0.895  f1=0.896  support=486
+  Healthy                precision=0.881  recall=0.970  f1=0.924  support=237

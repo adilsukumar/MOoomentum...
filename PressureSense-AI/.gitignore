@@ -1,0 +1,6 @@
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.npz
+__pycache__/
+.pytest_cache/
+.push-stage/

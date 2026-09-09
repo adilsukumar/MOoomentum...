@@ -1,0 +1,42 @@
+{
+  "window_1s": {
+    "accuracy": 0.9556440171582128,
+    "macro_f1": 0.9484530835206962,
+    "window_seconds": 1.0,
+    "stride_seconds": 0.5,
+    "n_windows": 119826,
+    "elapsed_seconds": 64.38332748413086
+  },
+  "window_2s": {
+    "accuracy": 0.9685650281384888,
+    "macro_f1": 0.9634248499004928,
+    "window_seconds": 2.0,
+    "stride_seconds": 1.0,
+    "n_windows": 54907,
+    "elapsed_seconds": 41.041125535964966
+  },
+  "window_3s": {
+    "accuracy": 0.9777107591523697,
+    "macro_f1": 0.9745700128907244,
+    "window_seconds": 3.0,
+    "stride_seconds": 1.0,
+    "n_windows": 50069,
+    "elapsed_seconds": 55.81784629821777
+  },
+  "window_4s": {
+    "accuracy": 0.9821764210253419,
+    "macro_f1": 0.9802690007512944,
+    "window_seconds": 4.0,
+    "stride_seconds": 1.0,
+    "n_windows": 46287,
+    "elapsed_seconds": 75.08373069763184
+  },
+  "window_5s": {
+    "accuracy": 0.9892433234421365,
+    "macro_f1": 0.9880259176246481,
+    "window_seconds": 5.0,
+    "stride_seconds": 1.0,
+    "n_windows": 43136,
+    "elapsed_seconds": 52.81464242935181
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "neck_coarse": {
+    "accuracy": 0.8730409093185119,
+    "macro_f1": 0.872999508877513
+  },
+  "neck_fine": {
+    "accuracy": 0.536327675128937,
+    "macro_f1": 0.30679825492341367
+  },
+  "calibration_seconds": 75
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-collar-temperature"
+version = "0.1.0"
+description = "Reference temperature safety engine for an AI smart dog collar"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.package-data]
+smart_collar_temperature = ["config/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["smart_collar_temperature*"]
+

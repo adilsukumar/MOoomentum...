@@ -1,0 +1,9 @@
+source_id,breed,n_dogs,heart_rate_median_bpm,heart_rate_iqr_low,heart_rate_iqr_high,resp_rate_median_bpm,resp_rate_iqr_low,resp_rate_iqr_high,median_age_years,median_weight_kg,notes
+AI_COLLAR_2025,Golden Retriever,31,57.9,54.7,60.7,16.0,13.7,17.6,2.8,34.0,Adults >1 and <10 years; descriptive not diagnostic
+AI_COLLAR_2025,German Shepherd,29,58.1,54.1,62.4,16.3,14.4,18.7,3.4,35.0,Adults >1 and <10 years; descriptive not diagnostic
+AI_COLLAR_2025,Labrador Retriever,26,57.9,54.4,63.7,14.8,13.2,17.3,4.5,31.5,Adults >1 and <10 years; descriptive not diagnostic
+AI_COLLAR_2025,Australian Shepherd,25,54.5,52.5,58.8,18.2,16.9,20.0,3.8,23.0,Adults >1 and <10 years; descriptive not diagnostic
+AI_COLLAR_2025,Border Collie,20,56.6,52.4,60.1,17.1,15.1,19.5,2.7,19.0,Adults >1 and <10 years; descriptive not diagnostic
+AI_COLLAR_2025,Doberman,18,60.6,57.1,64.1,13.8,11.3,14.7,3.1,36.0,Adults >1 and <10 years; descriptive not diagnostic
+AI_COLLAR_2025,Siberian Husky,18,58.1,55.4,61.9,14.8,12.5,17.8,3.2,22.0,Adults >1 and <10 years; descriptive not diagnostic
+

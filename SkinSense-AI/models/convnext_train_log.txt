@@ -1,0 +1,89 @@
+﻿python.exe : D:\22_SkinSense_ML\scripts\train.py:215: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+At line:2 char:1
++ & "D:\22_SkinSense_ML\.venv\Scripts\python.exe" "D:\22_SkinSense_ML\s ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\22_SkinSense...mental feature.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  ckpt = torch.load(out_dir / "best.pt", map_location=device)
+Classes (5): ['Allergic_dermatitis', 'Bacterial_dermatosis', 'Demodicosis', 'Fungal_infection', 'Healthy']
+  train: 6065 images
+  val: 1237 images
+  test: 1337 images
+[convnext_tiny] epoch 1/18  train_loss=1.5462  val_acc=0.4980  val_macroF1=0.5004  (110.5s)
+[convnext_tiny] epoch 2/18  train_loss=1.2286  val_acc=0.6863  val_macroF1=0.6487  (39.3s)
+[convnext_tiny] epoch 3/18  train_loss=1.1542  val_acc=0.6354  val_macroF1=0.6426  (34.8s)
+[convnext_tiny] epoch 4/18  train_loss=1.1225  val_acc=0.6597  val_macroF1=0.6537  (38.2s)
+[convnext_tiny] epoch 5/18  train_loss=1.1093  val_acc=0.7817  val_macroF1=0.7086  (35.8s)
+[convnext_tiny] epoch 6/18  train_loss=1.0821  val_acc=0.7575  val_macroF1=0.6991  (33.9s)
+[convnext_tiny] epoch 7/18  train_loss=1.0595  val_acc=0.8254  val_macroF1=0.7433  (33.9s)
+[convnext_tiny] epoch 8/18  train_loss=1.0526  val_acc=0.8488  val_macroF1=0.7521  (34.4s)
+[convnext_tiny] epoch 9/18  train_loss=1.0577  val_acc=0.8294  val_macroF1=0.7260  (33.8s)
+[convnext_tiny] epoch 10/18  train_loss=1.0790  val_acc=0.8254  val_macroF1=0.7331  (32.7s)
+[convnext_tiny] epoch 11/18  train_loss=1.0490  val_acc=0.8876  val_macroF1=0.7798  (32.0s)
+[convnext_tiny] epoch 12/18  train_loss=1.0359  val_acc=0.8933  val_macroF1=0.7768  (31.7s)
+[convnext_tiny] epoch 13/18  train_loss=1.0336  val_acc=0.9086  val_macroF1=0.7884  (31.9s)
+[convnext_tiny] epoch 14/18  train_loss=1.0244  val_acc=0.9095  val_macroF1=0.8011  (32.0s)
+[convnext_tiny] epoch 15/18  train_loss=1.0261  val_acc=0.9135  val_macroF1=0.8073  (32.7s)
+[convnext_tiny] epoch 16/18  train_loss=1.0289  val_acc=0.9192  val_macroF1=0.8124  (43.0s)
+[convnext_tiny] epoch 17/18  train_loss=1.0190  val_acc=0.9192  val_macroF1=0.8169  (75.8s)
+[convnext_tiny] epoch 18/18  train_loss=1.0313  val_acc=0.9192  val_macroF1=0.8169  (73.1s)
+Traceback (most recent call last):
+  File "D:\22_SkinSense_ML\scripts\train.py", line 259, in <module>
+    train_one(args.arch, args.epochs, args.batch_size, args.img_size, args.lr,
+  File "D:\22_SkinSense_ML\scripts\train.py", line 218, in train_one
+    y_test, pred_test = evaluate(model, loaders["test"], device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\scripts\train.py", line 101, in evaluate
+    for x, y in loader:
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\_utils.py", line 715, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 398, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 211, in collate
+    return [
+           ^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 212, in <listcomp>
+    collate(samples, collate_fn_map=collate_fn_map)
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 155, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 270, in collate_tensor_fn
+    storage = elem._typed_storage()._new_shared(numel, device=elem.device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\storage.py", line 1180, in _new_shared
+    untyped_storage = torch.UntypedStorage._new_shared(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\22_SkinSense_ML\.venv\Lib\site-packages\torch\storage.py", line 400, in _new_shared
+    return cls._new_using_filename_cpu(size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Couldn't open shared file mapping: <torch_23220_327650973_12>, error code: <1455>
+

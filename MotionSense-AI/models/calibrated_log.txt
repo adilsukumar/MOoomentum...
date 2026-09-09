@@ -1,0 +1,54 @@
+﻿[window] building neck-only windows...
+[window] 119,826 windows
+[calibrate] computing per-dog calibration baselines...
+[calibrate] 13 / 45 dogs fell back to whole-dog normalization (insufficient calibration-window data)
+
+=== Calibrated: neck coarse ===
+  [calibrated-coarse] fold 1/5 done
+  [calibrated-coarse] fold 2/5 done
+  [calibrated-coarse] fold 3/5 done
+  [calibrated-coarse] fold 4/5 done
+  [calibrated-coarse] fold 5/5 done
+              precision    recall  f1-score   support
+
+      Active       0.79      0.94      0.86     43367
+       Other       0.96      0.80      0.87     23120
+     Resting       0.93      0.85      0.89     53339
+
+    accuracy                           0.87    119826
+   macro avg       0.89      0.86      0.87    119826
+weighted avg       0.88      0.87      0.87    119826
+
+
+=== Calibrated: neck fine ===
+  [calibrated-fine] fold 1/5 done
+  [calibrated-fine] fold 2/5 done
+  [calibrated-fine] fold 3/5 done
+  [calibrated-fine] fold 4/5 done
+  [calibrated-fine] fold 5/5 done
+                 precision    recall  f1-score   support
+
+         Bowing       0.00      0.00      0.00         7
+Carrying object       0.00      0.00      0.00       234
+       Drinking       0.91      0.19      0.32      1158
+         Eating       0.12      0.08      0.09      2140
+      Galloping       0.00      0.00      0.00       122
+        Jumping       0.00      0.00      0.00        15
+    Lying chest       0.41      0.40      0.40     20246
+         Pacing       0.48      0.01      0.02      1160
+        Panting       0.22      0.16      0.18     14803
+        Playing       0.61      0.85      0.71     16288
+        Shaking       0.92      0.74      0.82       435
+        Sitting       0.32      0.25      0.28      9863
+       Sniffing       0.92      0.92      0.92     19146
+       Standing       0.30      0.18      0.23      8427
+       Trotting       0.77      0.71      0.74     13023
+        Tugging       0.00      0.00      0.00       228
+        Walking       0.41      0.68      0.51     12531
+
+       accuracy                           0.54    119826
+      macro avg       0.38      0.30      0.31    119826
+   weighted avg       0.52      0.54      0.51    119826
+
+
+Saved calibrated_results.json to D:\23_MotionSense_ML\models

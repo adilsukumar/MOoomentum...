@@ -1,0 +1,11 @@
+﻿[window] building neck-only windows...
+[window] 119,826 windows
+[seed=1] accuracy=0.9557 macro_f1=0.9497 (72.5s)
+[seed=7] accuracy=0.9559 macro_f1=0.9499 (66.6s)
+[seed=123] accuracy=0.9558 macro_f1=0.9498 (67.8s)
+
+Original run (seed=42): accuracy=0.9558 macro_f1=0.9497 (from models/metrics.json)
+New seeds [1, 7, 123]: accuracy mean=0.9558 std=0.0001 (range 0.9557-0.9559)
+New seeds macro_f1: mean=0.9498 std=0.0001 (range 0.9497-0.9499)
+
+Saved seed_confirmation_results.json to D:\23_MotionSense_ML\models

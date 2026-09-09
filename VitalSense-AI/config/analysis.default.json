@@ -1,0 +1,20 @@
+{
+  "window_seconds": 60.0,
+  "step_seconds": 30.0,
+  "minimum_window_seconds": 40.0,
+  "minimum_fusion_quality": 0.5,
+  "minimum_modality_quality": 0.35,
+  "static_accel_rms_g": 0.035,
+  "static_gyro_rms_dps": 5.0,
+  "sleep_minimum_minutes": 5.0,
+  "posture_change_degrees": 30.0,
+  "active_enmo_mg": 35.0,
+  "heart_band_hz": [0.3, 4.0],
+  "respiration_band_hz": [0.08, 0.8],
+  "minimum_heart_bpm": 20.0,
+  "maximum_heart_bpm": 240.0,
+  "minimum_resp_bpm": 6.0,
+  "maximum_resp_bpm": 48.0,
+  "respiration_agreement_bpm": 3.0,
+  "piezo_impulse_artifact_ratio": 12.0
+}

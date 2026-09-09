@@ -1,0 +1,8 @@
+{
+  "source_manifest": "manifest.csv",
+  "clean_manifest": "manifest_clean_conflicts_removed.csv",
+  "conflicting_groups_removed": 43,
+  "rows_removed": 255,
+  "rows_remaining": 8384,
+  "reason": "Same source-photo group carried multiple disease labels; entire ambiguous groups removed."
+}

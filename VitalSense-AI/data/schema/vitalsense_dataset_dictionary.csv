@@ -1,0 +1,79 @@
+table,field,type,unit,required,description
+dog,dog_id,string,,yes,Pseudonymous dog identifier
+dog,birth_date,date,,yes,Used to derive exact age at session
+dog,breed_primary,string,,yes,Primary breed or mixed
+dog,breed_secondary,string,,no,Secondary breed if known
+dog,sex,string,,yes,Male or female
+dog,neuter_status,string,,yes,Intact or neutered/spayed
+dog,weight_kg,float,kg,yes,Weight near session date
+dog,body_condition_score,float,1-9,no,Veterinary or trained assessment
+dog,coat_length,string,,yes,Short medium long
+dog,coat_density,string,,yes,Thin medium thick/double
+dog,brachycephalic,bool,,yes,Brachycephalic phenotype flag
+dog,chest_conformation,string,,no,Keel deep barrel or other
+dog,neck_circumference_cm,float,cm,yes,Fit and contact covariate
+dog,health_status,string,,yes,Apparently healthy or veterinarian diagnosis category
+dog,diagnoses,json,,no,Consent-controlled diagnoses and dates
+dog,medications,json,,no,Medication name dose schedule and dates
+session,session_id,string,,yes,Unique recording session
+session,dog_id,string,,yes,Foreign key to dog
+session,start_time_utc,datetime,UTC,yes,Session start
+session,timezone,string,IANA,yes,Local circadian context
+session,location_type,string,,yes,Home clinic lab outdoors
+session,ambient_temp_c,float,C,no,Requires environmental sensor or reference
+session,ambient_humidity_pct,float,percent,no,Requires environmental sensor or reference
+session,collar_position,string,,yes,Ventral lateral dorsal and rotation
+session,collar_tension_mm,float,mm,no,Gap or standardized fit measure
+session,hardware_id,string,,yes,Unit-level split and traceability
+session,hardware_revision,string,,yes,Enclosure and PCB revision
+session,firmware_version,string,,yes,Firmware traceability
+session,piezo_part_number,string,,yes,Sensor traceability
+session,piezo_adc_hz,float,Hz,yes,Actual acquisition rate
+session,bmi270_accel_odr_hz,float,Hz,yes,Accelerometer ODR
+session,bmi270_gyro_odr_hz,float,Hz,yes,Gyroscope ODR
+session,bmi270_accel_range_g,float,g,yes,Configured full scale
+session,bmi270_gyro_range_dps,float,dps,yes,Configured full scale
+session,battery_pct_start,float,percent,yes,Battery covariate
+raw,session_id,string,,yes,Foreign key to session
+raw,timestamp_ns,int,ns,yes,Monotonic synchronized timestamp
+raw,piezo_adc,float,ADC counts,yes,Unfiltered Piezo sample
+raw,accel_x_g,float,g,yes,BMI270 calibrated acceleration
+raw,accel_y_g,float,g,yes,BMI270 calibrated acceleration
+raw,accel_z_g,float,g,yes,BMI270 calibrated acceleration
+raw,gyro_x_dps,float,dps,yes,BMI270 calibrated angular rate
+raw,gyro_y_dps,float,dps,yes,BMI270 calibrated angular rate
+raw,gyro_z_dps,float,dps,yes,BMI270 calibrated angular rate
+reference,session_id,string,,yes,Foreign key to session
+reference,ecg_sample_hz,float,Hz,yes,Reference ECG sampling rate
+reference,ecg_raw,float,mV,yes,Reference ECG waveform or linked file
+reference,r_peak_time_ns,int,ns,yes,Expert-reviewed R peak timestamp table
+reference,resp_waveform,float,arbitrary,no,Respiratory inductance/flow reference
+reference,breath_time_ns,int,ns,yes,Expert-reviewed breath event timestamp
+reference,video_path,string,,yes,Synchronized behavior/thorax video
+reference,sleep_reference,string,,no,Video state or PSG stage if available
+annotation,session_id,string,,yes,Foreign key to session
+annotation,start_time_ns,int,ns,yes,Annotation start
+annotation,end_time_ns,int,ns,yes,Annotation end
+annotation,behavior_label,string,,yes,Sleep static stand sit walk run eat drink groom scratch pant etc
+annotation,posture_label,string,,yes,Recumbency and side/orientation
+annotation,artifact_label,string,,yes,None movement contact loss clipping electrical noise etc
+annotation,resp_effort_label,string,,no,Normal increased paradoxical unknown
+annotation,annotator_id,string,,yes,Traceability
+annotation,adjudication_status,string,,yes,Single double-reviewed or adjudicated
+derived,window_id,string,,yes,Unique analysis window
+derived,session_id,string,,yes,Foreign key to session
+derived,algorithm_version,string,,yes,Reproducibility
+derived,context,string,,yes,Moving static awake-rest sleep-candidate panting/unusable
+derived,piezo_quality,float,0-1,yes,Modality quality score
+derived,imu_quality,float,0-1,yes,Modality quality score
+derived,fusion_quality,float,0-1,yes,Final confidence
+derived,valid_coverage_pct,float,percent,yes,Fraction accepted
+derived,heart_rate_bpm,float,bpm,no,Mechanical pulse rate
+derived,resp_rate_bpm,float,breaths/min,no,Respiratory rate
+derived,ibi_rmssd_ms,float,ms,no,Mechanical inter-beat interval RMSSD
+derived,ibi_sd_ms,float,ms,no,Mechanical inter-beat interval standard deviation
+derived,pnn50_pct,float,percent,no,Mechanical interval differences above 50 ms
+derived,resp_interval_cv,float,ratio,no,Respiratory interval variation
+derived,activity_intensity,float,model units,no,Validated activity measure
+derived,alert_rule_ids,json,,yes,Rules fired for audit
+

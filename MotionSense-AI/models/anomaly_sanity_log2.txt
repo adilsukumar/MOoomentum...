@@ -1,0 +1,9 @@
+﻿[load] loading real data + trained anomaly baseline...
+[reduced_stride_regularity_mild] original flagged: 11/200 (5.5%) | corrupted flagged: 13/200 (6.5%)
+[reduced_stride_regularity_severe] original flagged: 11/200 (5.5%) | corrupted flagged: 99/200 (49.5%)
+[amplitude_clipping_mild] original flagged: 11/200 (5.5%) | corrupted flagged: 0/200 (0.0%)
+[amplitude_clipping_severe] original flagged: 11/200 (5.5%) | corrupted flagged: 0/200 (0.0%)
+[asymmetric_axis_noise_mild] original flagged: 11/200 (5.5%) | corrupted flagged: 10/200 (5.0%)
+[asymmetric_axis_noise_severe] original flagged: 11/200 (5.5%) | corrupted flagged: 6/200 (3.0%)
+
+Saved anomaly_sanity_test_results.json to D:\23_MotionSense_ML\models

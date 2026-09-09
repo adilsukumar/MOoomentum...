@@ -1,0 +1,8 @@
+﻿[load] windowing full dataset for anomaly baseline...
+[load] 119,826 windows across 45 dogs
+
+[summary] IsolationForest flagged 5,992 / 119,826 windows as top-5% unusual (personal-baseline relative)
+[summary] 2,684 / 26,836 locomotion windows (bottom 10% by design) fall below the gait-regularity threshold (0.2174, set from this run's own data)
+[summary] per-dog baseline Shaking-window rate (min/median/max): 0.0000 / 0.0019 / 0.0137
+
+Saved anomaly_baseline.joblib + anomaly_summary.json to D:\23_MotionSense_ML\models

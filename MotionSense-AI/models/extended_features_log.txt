@@ -1,0 +1,43 @@
+﻿[window] building neck-only windows...
+[features] base=64 extended_added=42 total=106
+
+=== Extended features: neck coarse ===
+  fold 1/5 done
+  fold 2/5 done
+  fold 3/5 done
+  fold 4/5 done
+  fold 5/5 done
+              precision    recall  f1-score   support
+
+      Active       0.95      0.98      0.97     43367
+       Other       0.96      0.89      0.92     23120
+     Resting       0.96      0.97      0.97     53339
+
+    accuracy                           0.96    119826
+   macro avg       0.96      0.95      0.95    119826
+weighted avg       0.96      0.96      0.96    119826
+
+
+[importance] 12/20 of the top-20 most important features are new (of 42 new features added)
+  ANeck_mag_std: 0.0919
+  ANeck_y_mean: 0.0739
+  ANeck_y_min: 0.0721
+  ANeck_mag_jerk_rms: 0.0589 <- NEW
+  ANeck_y_max: 0.0488
+  ANeck_mag_jerk_std: 0.0448 <- NEW
+  ANeck_mag_max: 0.0389
+  ANeck_z_jerk_rms: 0.0330 <- NEW
+  ANeck_z_jerk_std: 0.0327 <- NEW
+  ANeck_y_jerk_std: 0.0314 <- NEW
+  ANeck_y_jerk_rms: 0.0296 <- NEW
+  ANeck_z_std: 0.0279
+  GNeck_corr_yz: 0.0277 <- NEW
+  ANeck_y_std: 0.0254
+  ANeck_mag_min: 0.0242
+  GNeck_x_jerk_std: 0.0240 <- NEW
+  ANeck_x_jerk_rms: 0.0203 <- NEW
+  GNeck_x_jerk_rms: 0.0187 <- NEW
+  ANeck_x_jerk_std: 0.0154 <- NEW
+  GNeck_y_jerk_std: 0.0148 <- NEW
+
+Saved extended_features_results.json to D:\23_MotionSense_ML\models

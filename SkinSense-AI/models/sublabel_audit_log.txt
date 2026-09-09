@@ -1,0 +1,18 @@
+﻿Running inference on 1337 test images for sub-label breakdown...
+  300/1337
+  600/1337
+  900/1337
+  1200/1337
+
+=== Per-original-label accuracy, grouped by merged unified class ===
+
+Allergic_dermatitis  (overall n=354, overall acc=0.6441)
+  raw_label=Dermatitis           n= 217  accuracy=0.7926  mean_confidence=0.619  misroutes={'Bacterial_dermatosis': 23, 'Fungal_infection': 20, 'Healthy': 2}
+  raw_label=Hypersensitivity     n= 117  accuracy=0.4103  mean_confidence=0.564  misroutes={'Bacterial_dermatosis': 45, 'Fungal_infection': 20, 'Healthy': 4}
+  raw_label=Hypersensitivity_allergic_dermatosis n=  20  accuracy=0.4000  mean_confidence=0.566  misroutes={'Bacterial_dermatosis': 8, 'Fungal_infection': 3, 'Healthy': 1}
+
+Fungal_infection  (overall n=486, overall acc=0.7881)
+  raw_label=Fungal_infections    n= 155  accuracy=0.4516  mean_confidence=0.546  misroutes={'Bacterial_dermatosis': 59, 'Allergic_dermatitis': 14, 'Healthy': 10, 'Demodicosis': 2}
+  raw_label=ringworm             n= 331  accuracy=0.9456  mean_confidence=0.551  misroutes={'Allergic_dermatitis': 12, 'Bacterial_dermatosis': 4, 'Demodicosis': 2}
+
+Wrote models/sublabel_audit.json

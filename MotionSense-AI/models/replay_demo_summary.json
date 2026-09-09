@@ -1,0 +1,9 @@
+{
+  "dog_id": 45,
+  "n_windows": 4815,
+  "coarse_match_or_uncertain_rate": 0.9997923156801661,
+  "n_anomaly_flags": 270,
+  "n_gait_flags": 27,
+  "n_locomotion_windows": 1333,
+  "plot_path": "models\\replay_demo_dog45.png"
+}

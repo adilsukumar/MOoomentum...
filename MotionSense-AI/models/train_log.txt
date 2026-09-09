@@ -1,0 +1,103 @@
+﻿[load] 10,611,068 rows in 36.6s
+[load] 6,556,827 labeled rows after dropping sync/undefined
+[window] building windows + majority labels (this scans the full dataset)...
+[window] 119,826 pure windows in 22.6s
+[feature] extracting per-window statistics...
+
+=== neck: coarse (Active/Resting/Other) ===
+  [neck-coarse] fold 1/5 held-out dogs=[np.int64(21), np.int64(22), np.int64(23), np.int64(26), np.int64(45), np.int64(52), np.int64(57), np.int64(67), np.int64(72)]
+  [neck-coarse] fold 2/5 held-out dogs=[np.int64(18), np.int64(30), np.int64(33), np.int64(36), np.int64(39), np.int64(43), np.int64(59), np.int64(61), np.int64(73)]
+  [neck-coarse] fold 3/5 held-out dogs=[np.int64(19), np.int64(28), np.int64(29), np.int64(44), np.int64(46), np.int64(49), np.int64(60), np.int64(65), np.int64(74)]
+  [neck-coarse] fold 4/5 held-out dogs=[np.int64(16), np.int64(25), np.int64(34), np.int64(41), np.int64(54), np.int64(55), np.int64(56), np.int64(63), np.int64(68)]
+  [neck-coarse] fold 5/5 held-out dogs=[np.int64(20), np.int64(27), np.int64(47), np.int64(48), np.int64(51), np.int64(53), np.int64(58), np.int64(66), np.int64(70)]
+              precision    recall  f1-score   support
+
+      Active       0.95      0.98      0.96     43367
+       Other       0.96      0.89      0.92     23120
+     Resting       0.96      0.97      0.97     53339
+
+    accuracy                           0.96    119826
+   macro avg       0.96      0.94      0.95    119826
+weighted avg       0.96      0.96      0.96    119826
+
+
+=== neck: fine-grained (17 behaviors) ===
+  [neck-fine] fold 1/5 held-out dogs=[np.int64(21), np.int64(22), np.int64(23), np.int64(26), np.int64(45), np.int64(52), np.int64(57), np.int64(67), np.int64(72)]
+  [neck-fine] fold 2/5 held-out dogs=[np.int64(18), np.int64(30), np.int64(33), np.int64(36), np.int64(39), np.int64(43), np.int64(59), np.int64(61), np.int64(73)]
+  [neck-fine] fold 3/5 held-out dogs=[np.int64(19), np.int64(28), np.int64(29), np.int64(44), np.int64(46), np.int64(49), np.int64(60), np.int64(65), np.int64(74)]
+  [neck-fine] fold 4/5 held-out dogs=[np.int64(16), np.int64(25), np.int64(34), np.int64(41), np.int64(54), np.int64(55), np.int64(56), np.int64(63), np.int64(68)]
+  [neck-fine] fold 5/5 held-out dogs=[np.int64(20), np.int64(27), np.int64(47), np.int64(48), np.int64(51), np.int64(53), np.int64(58), np.int64(66), np.int64(70)]
+                 precision    recall  f1-score   support
+
+         Bowing       0.00      0.00      0.00         7
+Carrying object       0.09      0.01      0.02       234
+       Drinking       0.94      0.60      0.74      1158
+         Eating       0.27      0.35      0.31      2140
+      Galloping       0.00      0.00      0.00       122
+        Jumping       0.00      0.00      0.00        15
+    Lying chest       0.48      0.48      0.48     20246
+         Pacing       0.06      0.01      0.01      1160
+        Panting       0.40      0.47      0.43     14803
+        Playing       0.87      0.86      0.87     16288
+        Shaking       0.97      0.95      0.96       435
+        Sitting       0.37      0.29      0.32      9863
+       Sniffing       0.96      0.99      0.97     19146
+       Standing       0.24      0.14      0.18      8427
+       Trotting       0.85      0.91      0.88     13023
+        Tugging       0.00      0.00      0.00       228
+        Walking       0.77      0.94      0.85     12531
+
+       accuracy                           0.66    119826
+      macro avg       0.43      0.41      0.41    119826
+   weighted avg       0.64      0.66      0.65    119826
+
+
+=== neck+back: coarse (Active/Resting/Other) ===
+  [neck+back-coarse] fold 1/5 held-out dogs=[np.int64(21), np.int64(22), np.int64(23), np.int64(26), np.int64(45), np.int64(52), np.int64(57), np.int64(67), np.int64(72)]
+  [neck+back-coarse] fold 2/5 held-out dogs=[np.int64(18), np.int64(30), np.int64(33), np.int64(36), np.int64(39), np.int64(43), np.int64(59), np.int64(61), np.int64(73)]
+  [neck+back-coarse] fold 3/5 held-out dogs=[np.int64(19), np.int64(28), np.int64(29), np.int64(44), np.int64(46), np.int64(49), np.int64(60), np.int64(65), np.int64(74)]
+  [neck+back-coarse] fold 4/5 held-out dogs=[np.int64(16), np.int64(25), np.int64(34), np.int64(41), np.int64(54), np.int64(55), np.int64(56), np.int64(63), np.int64(68)]
+  [neck+back-coarse] fold 5/5 held-out dogs=[np.int64(20), np.int64(27), np.int64(47), np.int64(48), np.int64(51), np.int64(53), np.int64(58), np.int64(66), np.int64(70)]
+              precision    recall  f1-score   support
+
+      Active       0.98      0.99      0.98     43367
+       Other       0.97      0.88      0.92     23120
+     Resting       0.96      0.99      0.98     53339
+
+    accuracy                           0.97    119826
+   macro avg       0.97      0.95      0.96    119826
+weighted avg       0.97      0.97      0.97    119826
+
+
+=== neck+back: fine-grained (17 behaviors) ===
+  [neck+back-fine] fold 1/5 held-out dogs=[np.int64(21), np.int64(22), np.int64(23), np.int64(26), np.int64(45), np.int64(52), np.int64(57), np.int64(67), np.int64(72)]
+  [neck+back-fine] fold 2/5 held-out dogs=[np.int64(18), np.int64(30), np.int64(33), np.int64(36), np.int64(39), np.int64(43), np.int64(59), np.int64(61), np.int64(73)]
+  [neck+back-fine] fold 3/5 held-out dogs=[np.int64(19), np.int64(28), np.int64(29), np.int64(44), np.int64(46), np.int64(49), np.int64(60), np.int64(65), np.int64(74)]
+  [neck+back-fine] fold 4/5 held-out dogs=[np.int64(16), np.int64(25), np.int64(34), np.int64(41), np.int64(54), np.int64(55), np.int64(56), np.int64(63), np.int64(68)]
+  [neck+back-fine] fold 5/5 held-out dogs=[np.int64(20), np.int64(27), np.int64(47), np.int64(48), np.int64(51), np.int64(53), np.int64(58), np.int64(66), np.int64(70)]
+                 precision    recall  f1-score   support
+
+         Bowing       0.00      0.00      0.00         7
+Carrying object       0.67      0.01      0.02       234
+       Drinking       0.96      0.65      0.77      1158
+         Eating       0.33      0.34      0.33      2140
+      Galloping       0.00      0.00      0.00       122
+        Jumping       0.00      0.00      0.00        15
+    Lying chest       0.70      0.80      0.75     20246
+         Pacing       0.50      0.19      0.28      1160
+        Panting       0.57      0.51      0.54     14803
+        Playing       0.88      0.90      0.89     16288
+        Shaking       0.99      0.96      0.97       435
+        Sitting       0.59      0.56      0.58      9863
+       Sniffing       0.97      0.98      0.98     19146
+       Standing       0.51      0.43      0.47      8427
+       Trotting       0.89      0.93      0.91     13023
+        Tugging       0.00      0.00      0.00       228
+        Walking       0.90      0.97      0.93     12531
+
+       accuracy                           0.77    119826
+      macro avg       0.56      0.48      0.49    119826
+   weighted avg       0.76      0.77      0.77    119826
+
+
+Saved models + metrics.json to D:\23_MotionSense_ML\models

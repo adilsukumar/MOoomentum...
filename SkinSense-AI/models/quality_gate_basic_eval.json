@@ -1,0 +1,469 @@
+{
+  "results": {
+    "bad_aspect": [
+      {
+        "file": "aspect_00.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_01.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_02.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_03.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_04.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_05.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_06.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_07.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_08.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      },
+      {
+        "file": "aspect_09.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (600x40px, minimum 64px on each side)",
+          "unusable aspect ratio (600x40, 15.0:1)"
+        ]
+      }
+    ],
+    "bad_blurry": [
+      {
+        "file": "blurry_00.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=20.7, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_01.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=23.4, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_02.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "blurry_03.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=36.2, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_04.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=76.1, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_05.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=36.1, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_06.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=49.3, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_07.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "blurry_08.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=63.2, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_09.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=70.8, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_10.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "blurry_11.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "blurry_12.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "blurry_13.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=23.0, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "blurry_14.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=3.2, minimum 80.0)"
+        ]
+      }
+    ],
+    "bad_flat": [
+      {
+        "file": "flat_00.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_01.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=11.8, minimum 80.0)",
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_02.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_03.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=0.0, minimum 80.0)",
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_04.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_05.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_06.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=66.1, minimum 80.0)",
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_07.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_08.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      },
+      {
+        "file": "flat_09.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears blank/flat (pixel std=0.0)"
+        ]
+      }
+    ],
+    "bad_noise": [
+      {
+        "file": "noise_00.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_01.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_02.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_03.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_04.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_05.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_06.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_07.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_08.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "noise_09.jpg",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "bad_tiny": [
+      {
+        "file": "tiny_00.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_01.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_02.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_03.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_04.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_05.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_06.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_07.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_08.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      },
+      {
+        "file": "tiny_09.jpg",
+        "passed": false,
+        "reasons": [
+          "image too small (32x32px, minimum 64px on each side)"
+        ]
+      }
+    ],
+    "good": [
+      {
+        "file": "good_00.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_01.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_02.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_03.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_04.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_05.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=61.0, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "good_06.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_07.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_08.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_09.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_10.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_11.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_12.jpg",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "file": "good_13.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=78.1, minimum 80.0)"
+        ]
+      },
+      {
+        "file": "good_14.jpg",
+        "passed": false,
+        "reasons": [
+          "image appears too blurry (edge variance=34.8, minimum 80.0)"
+        ]
+      }
+    ]
+  },
+  "false_positives": 3,
+  "false_negatives": 5,
+  "true_positives": 40,
+  "true_negatives": 12
+}

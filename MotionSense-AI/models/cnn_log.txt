@@ -1,0 +1,39 @@
+﻿python.exe : WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+At line:2 char:1
++ & "C:\Users\bhumi\AppData\Local\Programs\Python\Python311\python.exe" ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: All lo...itten to STDERR:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+I0000 00:00:1787411966.464368   31296 port.cc:153] oneDNN custom operations are on. You may see slightly different 
+numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the 
+environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787411996.950080   31296 port.cc:153] oneDNN custom operations are on. You may see slightly different 
+numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the 
+environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1787412040.283528   31296 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available 
+CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with 
+the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if 
+CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[window] building neck-only windows...
+[window] 119,826 windows, shape per window (100, 8)
+[fold 1/5] done in 34.9s, held out 9 dogs
+[fold 2/5] done in 46.7s, held out 9 dogs
+[fold 3/5] done in 53.7s, held out 9 dogs
+[fold 4/5] done in 41.1s, held out 9 dogs
+[fold 5/5] done in 27.6s, held out 9 dogs
+              precision    recall  f1-score   support
+
+      Active       0.96      0.98      0.97     43367
+       Other       0.94      0.90      0.92     23120
+     Resting       0.97      0.97      0.97     53339
+
+    accuracy                           0.96    119826
+   macro avg       0.95      0.95      0.95    119826
+weighted avg       0.96      0.96      0.96    119826
+
+
+Saved cnn_results.json to D:\23_MotionSense_ML\models

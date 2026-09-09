@@ -1,0 +1,132 @@
+{
+  "n_folds_completed": 5,
+  "per_fold": [
+    {
+      "fold": "cv_fold1",
+      "overall_accuracy": 0.8598774885145483,
+      "overall_macro_f1": 0.758272272025512,
+      "bacterial_precision": 0.08196721311475409,
+      "bacterial_recall": 0.47619047619047616,
+      "bacterial_f1": 0.13986013986013987,
+      "bacterial_support": 21,
+      "high_conf_bacterial_n": 39,
+      "high_conf_bacterial_correct": 10,
+      "high_conf_bacterial_accuracy": 0.2564102564102564
+    },
+    {
+      "fold": "cv_fold2",
+      "overall_accuracy": 0.860410094637224,
+      "overall_macro_f1": 0.7410106904514626,
+      "bacterial_precision": 0.061855670103092786,
+      "bacterial_recall": 0.375,
+      "bacterial_f1": 0.10619469026548672,
+      "bacterial_support": 16,
+      "high_conf_bacterial_n": 8,
+      "high_conf_bacterial_correct": 3,
+      "high_conf_bacterial_accuracy": 0.375
+    },
+    {
+      "fold": "cv_fold3",
+      "overall_accuracy": 0.8456,
+      "overall_macro_f1": 0.7274524658463729,
+      "bacterial_precision": 0.05405405405405406,
+      "bacterial_recall": 0.3333333333333333,
+      "bacterial_f1": 0.09302325581395349,
+      "bacterial_support": 12,
+      "high_conf_bacterial_n": 6,
+      "high_conf_bacterial_correct": 3,
+      "high_conf_bacterial_accuracy": 0.5
+    },
+    {
+      "fold": "cv_fold4",
+      "overall_accuracy": 0.9093774625689519,
+      "overall_macro_f1": 0.7660644891894774,
+      "bacterial_precision": 0.05660377358490566,
+      "bacterial_recall": 0.375,
+      "bacterial_f1": 0.09836065573770492,
+      "bacterial_support": 8,
+      "high_conf_bacterial_n": 3,
+      "high_conf_bacterial_correct": 2,
+      "high_conf_bacterial_accuracy": 0.6666666666666666
+    },
+    {
+      "fold": "cv_fold5",
+      "overall_accuracy": 0.8038632986627043,
+      "overall_macro_f1": 0.7289569991172705,
+      "bacterial_precision": 0.049773755656108594,
+      "bacterial_recall": 0.6470588235294118,
+      "bacterial_f1": 0.09243697478991597,
+      "bacterial_support": 17,
+      "high_conf_bacterial_n": 31,
+      "high_conf_bacterial_correct": 3,
+      "high_conf_bacterial_accuracy": 0.0967741935483871
+    }
+  ],
+  "overall_accuracy": {
+    "mean": 0.8558256688766857,
+    "std": 0.033793138450937565
+  },
+  "overall_macro_f1": {
+    "mean": 0.7443513833260191,
+    "std": 0.01548528859565742
+  },
+  "bacterial_dermatosis": {
+    "precision": {
+      "mean": 0.06085089330258303,
+      "std": 0.011259187954149267
+    },
+    "recall": {
+      "mean": 0.4413165266106443,
+      "std": 0.11313904589881658
+    },
+    "f1": {
+      "mean": 0.1059751432934402,
+      "std": 0.017647974442670356
+    },
+    "test_support_per_fold": [
+      21,
+      16,
+      12,
+      8,
+      17
+    ]
+  },
+  "high_confidence_accuracy_bacterial_predictions": {
+    "mean": 0.378970223325062,
+    "std": 0.19600446818300934,
+    "n_per_fold": [
+      39,
+      8,
+      6,
+      3,
+      31
+    ],
+    "correct_per_fold": [
+      10,
+      3,
+      3,
+      2,
+      3
+    ],
+    "pooled_accuracy": 0.2413793103448276
+  },
+  "high_confidence_accuracy_other_predictions": {
+    "mean": 0.9476923076923077,
+    "std": 0.037008448313166575,
+    "n_per_fold": [
+      0,
+      0,
+      25,
+      4,
+      65
+    ],
+    "correct_per_fold": [
+      0,
+      0,
+      23,
+      4,
+      60
+    ],
+    "pooled_accuracy": 0.925531914893617
+  }
+}

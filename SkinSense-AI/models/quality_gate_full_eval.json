@@ -1,0 +1,1165 @@
+{
+  "checkpoint": "D:\\22_SkinSense_ML\\models\\convnext_4class_focal\\best.pt",
+  "centroids": "D:\\22_SkinSense_ML\\models\\convnext_4class_focal\\quality_centroids.npz",
+  "counts": {
+    "good": 15,
+    "bad": 55,
+    "false_positives": 3,
+    "false_negatives": 15
+  },
+  "rates": {
+    "false_positive_rate": 0.2,
+    "false_negative_rate": 0.2727272727272727
+  },
+  "records": [
+    {
+      "category": "bad_aspect",
+      "file": "aspect_00.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 690.2583776041666,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 61.7346704304779,
+        "ood_zscore": 1.7091214656829834,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_01.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 292.80969069270833,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 48.263779277971054,
+        "ood_zscore": 1.1436861753463745,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_02.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3292.932533956597,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 70.36228144376945,
+        "ood_zscore": 1.969187617301941,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_03.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 479.3513485677083,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 37.505356852943905,
+        "ood_zscore": 1.4449381828308105,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_04.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 1192.3438972899305,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 42.65694035941149,
+        "ood_zscore": 1.8682348728179932,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_05.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 598.9500884565972,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 57.735473428372124,
+        "ood_zscore": 1.62656831741333,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_06.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 532.8317957899305,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 52.16437878035097,
+        "ood_zscore": 1.7109041213989258,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_07.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 754.7014136041666,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 37.5011666272003,
+        "ood_zscore": 2.349133014678955,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_08.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 1295.1914396597224,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 90.0049783524346,
+        "ood_zscore": 1.5341482162475586,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_aspect",
+      "file": "aspect_09.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (600x40px, minimum 64px on each side)",
+        "unusable aspect ratio (600x40, 15.0:1)"
+      ],
+      "diagnostics": {
+        "blur_variance": 828.468598638889,
+        "width": 600,
+        "height": 40,
+        "pixel_std": 54.199899858392016,
+        "ood_zscore": 1.8251339197158813,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_00.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=20.7, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 20.673435126394033,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 56.98976751117919,
+        "ood_zscore": 0.3454757332801819,
+        "nearest_class": "Fungal_infection"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_01.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=23.4, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 23.438772430205344,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 45.461515618825025,
+        "ood_zscore": 2.7610323429107666,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_02.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 327.8624136767327,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 64.58774732861262,
+        "ood_zscore": 0.395352303981781,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_03.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=36.2, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 36.17038196554185,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 33.94907288625886,
+        "ood_zscore": 1.8346513509750366,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_04.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=76.1, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 76.13974445504546,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 37.552608654443205,
+        "ood_zscore": 2.2468819618225098,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_05.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=36.1, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 36.11618169650435,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 54.97312841943961,
+        "ood_zscore": 2.1208300590515137,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_06.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=49.3, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 49.33822960374355,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 49.2033139930838,
+        "ood_zscore": 1.085253119468689,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_07.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 109.9507802810609,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 34.87761949526772,
+        "ood_zscore": 3.2523081302642822,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_08.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=63.2, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 63.19403088948726,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 85.96994167207896,
+        "ood_zscore": 3.1127500534057617,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_09.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=70.8, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 70.7606479334295,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 49.51107080708238,
+        "ood_zscore": 0.1433807909488678,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_10.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 93.21859800376893,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 28.778391923222127,
+        "ood_zscore": 1.2509701251983643,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_11.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 108.51863696441056,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 42.923918775107005,
+        "ood_zscore": 1.5625121593475342,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_12.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 91.24373205351232,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 51.74471437797632,
+        "ood_zscore": 2.127795457839966,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_13.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=23.0, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 23.008379794210196,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 22.500460940772303,
+        "ood_zscore": 2.0716640949249268,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_blurry",
+      "file": "blurry_14.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=3.2, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3.2229636049032213,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 53.295585742164654,
+        "ood_zscore": 2.4928576946258545,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_00.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 524.4917728395061,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.4915671646595001,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_01.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=11.8, minimum 80.0)",
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 11.801064888888888,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.49531686305999756,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_02.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 852.6269382222222,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.47697749733924866,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_03.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=0.0, minimum 80.0)",
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 0.0,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.5427093505859375,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_04.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 90.33059557728397,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.526910662651062,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_05.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 136.42031011555554,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.47139689326286316,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_06.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=66.1, minimum 80.0)",
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 66.09907567209879,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.5327890515327454,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_07.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 306.94569776,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.5117965936660767,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_08.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 306.94569776,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.48434677720069885,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_flat",
+      "file": "flat_09.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image appears blank/flat (pixel std=0.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 201.61463747950617,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 0.0,
+        "ood_zscore": -0.5267685055732727,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_00.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9815.06054777469,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 49.873189366126425,
+        "ood_zscore": -0.12346828728914261,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_01.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9887.290544444446,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.2233411817874,
+        "ood_zscore": 0.0805753767490387,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_02.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9813.185936999507,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 49.996152621853355,
+        "ood_zscore": -0.09390603750944138,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_03.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9871.484470629137,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.190143245327995,
+        "ood_zscore": 0.09046266973018646,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_04.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9836.97141436432,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.2300374911071,
+        "ood_zscore": -0.10769513249397278,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_05.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9848.099349108026,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.10167835969934,
+        "ood_zscore": -0.05218172073364258,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_06.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9859.49791762173,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.014453197064526,
+        "ood_zscore": 0.07088202238082886,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_07.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9827.504090480987,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.04280369147576,
+        "ood_zscore": 0.0382281169295311,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_08.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9829.799071555557,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 50.13243721389807,
+        "ood_zscore": -0.048909951001405716,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_noise",
+      "file": "noise_09.jpg",
+      "expected_good": false,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 9821.829533925433,
+        "width": 300,
+        "height": 300,
+        "pixel_std": 49.953547986784926,
+        "ood_zscore": -0.12290064990520477,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_00.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3227.750594139099,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.84779418705339,
+        "ood_zscore": 0.8420038223266602,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_01.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3335.1410179138184,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.254822576478222,
+        "ood_zscore": 0.98386150598526,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_02.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3083.490291595459,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.24046432616186,
+        "ood_zscore": 0.43245577812194824,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_03.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3153.655188560486,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 22.237854031965888,
+        "ood_zscore": 0.9508253931999207,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_04.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3106.8231163024902,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.182828315019314,
+        "ood_zscore": 1.1571813821792603,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_05.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3109.160994529724,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.211580259022686,
+        "ood_zscore": 0.8615355491638184,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_06.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3065.228515625,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.51506045064162,
+        "ood_zscore": 1.2909024953842163,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_07.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 2674.5165977478027,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 20.020148904343834,
+        "ood_zscore": 1.239179253578186,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_08.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3118.3404684066772,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 21.519475588169982,
+        "ood_zscore": 0.5267043113708496,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "bad_tiny",
+      "file": "tiny_09.jpg",
+      "expected_good": false,
+      "passed": false,
+      "reasons": [
+        "image too small (32x32px, minimum 64px on each side)"
+      ],
+      "diagnostics": {
+        "blur_variance": 3288.508406639099,
+        "width": 32,
+        "height": 32,
+        "pixel_std": 22.279616971515935,
+        "ood_zscore": 0.9752101302146912,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_00.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 174.73656768650415,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 64.60298814835545,
+        "ood_zscore": -0.933728814125061,
+        "nearest_class": "Fungal_infection"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_01.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 108.90315263723731,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 50.237963642555016,
+        "ood_zscore": -1.0202457904815674,
+        "nearest_class": "Fungal_infection"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_02.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 1189.2899745593966,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 74.8697310807895,
+        "ood_zscore": -1.1543800830841064,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_03.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 86.92522466406226,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 38.84999987900978,
+        "ood_zscore": -1.0827982425689697,
+        "nearest_class": "Allergic_dermatitis"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_04.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 179.38467724905016,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 46.925602351956854,
+        "ood_zscore": 1.8863500356674194,
+        "nearest_class": "Allergic_dermatitis"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_05.jpg",
+      "expected_good": true,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=61.0, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 61.03576231956481,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 58.30155905405309,
+        "ood_zscore": 2.0179030895233154,
+        "nearest_class": "Allergic_dermatitis"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_06.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 87.59809882581234,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 52.957177190793765,
+        "ood_zscore": 2.1154839992523193,
+        "nearest_class": "Allergic_dermatitis"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_07.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 146.6819773462057,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 38.36054165551512,
+        "ood_zscore": -1.0221329927444458,
+        "nearest_class": "Allergic_dermatitis"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_08.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 115.60508124291897,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 91.24412250903416,
+        "ood_zscore": 0.9634124636650085,
+        "nearest_class": "Fungal_infection"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_09.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 623.7807739719808,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 56.6530898484133,
+        "ood_zscore": -0.23501275479793549,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_10.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 358.13450301072595,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 38.932670614189774,
+        "ood_zscore": 0.6717848181724548,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_11.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 594.9961535941064,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 51.453151557806095,
+        "ood_zscore": -1.273306965827942,
+        "nearest_class": "Healthy"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_12.jpg",
+      "expected_good": true,
+      "passed": true,
+      "reasons": [],
+      "diagnostics": {
+        "blur_variance": 204.45117691325544,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 62.70668110211353,
+        "ood_zscore": 2.3287596702575684,
+        "nearest_class": "Fungal_infection"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_13.jpg",
+      "expected_good": true,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=78.1, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 78.08953523397446,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 34.25029024208182,
+        "ood_zscore": 2.9901604652404785,
+        "nearest_class": "Demodicosis"
+      }
+    },
+    {
+      "category": "good",
+      "file": "good_14.jpg",
+      "expected_good": true,
+      "passed": false,
+      "reasons": [
+        "image appears too blurry (edge variance=34.8, minimum 80.0)"
+      ],
+      "diagnostics": {
+        "blur_variance": 34.765348422026634,
+        "width": 640,
+        "height": 640,
+        "pixel_std": 62.52304447895661,
+        "ood_zscore": 2.7073943614959717,
+        "nearest_class": "Fungal_infection"
+      }
+    }
+  ]
+}

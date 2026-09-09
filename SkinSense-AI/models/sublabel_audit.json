@@ -1,0 +1,57 @@
+{
+  "Allergic_dermatitis": {
+    "Dermatitis": {
+      "n": 217,
+      "accuracy": 0.7926267281105991,
+      "mean_confidence": 0.6192959983777341,
+      "misroutes": {
+        "Bacterial_dermatosis": 23,
+        "Fungal_infection": 20,
+        "Healthy": 2
+      }
+    },
+    "Hypersensitivity": {
+      "n": 117,
+      "accuracy": 0.41025641025641024,
+      "mean_confidence": 0.5640210641754998,
+      "misroutes": {
+        "Bacterial_dermatosis": 45,
+        "Fungal_infection": 20,
+        "Healthy": 4
+      }
+    },
+    "Hypersensitivity_allergic_dermatosis": {
+      "n": 20,
+      "accuracy": 0.4,
+      "mean_confidence": 0.5663304433226586,
+      "misroutes": {
+        "Bacterial_dermatosis": 8,
+        "Fungal_infection": 3,
+        "Healthy": 1
+      }
+    }
+  },
+  "Fungal_infection": {
+    "Fungal_infections": {
+      "n": 155,
+      "accuracy": 0.45161290322580644,
+      "mean_confidence": 0.5456982206913733,
+      "misroutes": {
+        "Bacterial_dermatosis": 59,
+        "Allergic_dermatitis": 14,
+        "Healthy": 10,
+        "Demodicosis": 2
+      }
+    },
+    "ringworm": {
+      "n": 331,
+      "accuracy": 0.945619335347432,
+      "mean_confidence": 0.551455059620549,
+      "misroutes": {
+        "Allergic_dermatitis": 12,
+        "Bacterial_dermatosis": 4,
+        "Demodicosis": 2
+      }
+    }
+  }
+}

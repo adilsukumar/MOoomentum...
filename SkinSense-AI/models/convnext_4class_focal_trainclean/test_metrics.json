@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.90895410082769,
+  "macro_f1": 0.9161484693132113,
+  "per_class": {
+    "Allergic_dermatitis": {
+      "precision": 0.959731543624161,
+      "recall": 0.807909604519774,
+      "f1": 0.8773006134969326,
+      "support": 354
+    },
+    "Demodicosis": {
+      "precision": 0.9641434262948207,
+      "recall": 0.9603174603174603,
+      "f1": 0.9622266401590457,
+      "support": 252
+    },
+    "Fungal_infection": {
+      "precision": 0.8544423440453687,
+      "recall": 0.9300411522633745,
+      "f1": 0.8906403940886699,
+      "support": 486
+    },
+    "Healthy": {
+      "precision": 0.9083665338645418,
+      "recall": 0.9620253164556962,
+      "f1": 0.9344262295081968,
+      "support": 237
+    }
+  },
+  "confusion_matrix": [
+    [
+      286,
+      1,
+      59,
+      8
+    ],
+    [
+      0,
+      242,
+      10,
+      0
+    ],
+    [
+      11,
+      8,
+      452,
+      15
+    ],
+    [
+      1,
+      0,
+      8,
+      228
+    ]
+  ],
+  "classes": [
+    "Allergic_dermatitis",
+    "Demodicosis",
+    "Fungal_infection",
+    "Healthy"
+  ]
+}

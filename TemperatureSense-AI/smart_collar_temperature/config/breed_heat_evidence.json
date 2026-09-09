@@ -1,0 +1,43 @@
+{
+  "study": {
+    "citation": "Hall EJ et al. Incidence and risk factors for heat-related illness in UK dogs under primary veterinary care in 2016. Scientific Reports. 2020;10:9128.",
+    "doi": "10.1038/s41598-020-66015-8",
+    "population_note": "Population-level UK odds ratios relative to Labrador Retrievers; these are not per-dog temperature thresholds and may not generalize to other climates."
+  },
+  "breeds": [
+    {"name": "Labrador Retriever", "aliases": ["Labrador", "Lab"], "odds_ratio": 1.0, "significantly_higher": false},
+    {"name": "Chow Chow", "aliases": ["Chow"], "odds_ratio": 16.61, "significantly_higher": true},
+    {"name": "Bulldog", "aliases": ["English Bulldog", "British Bulldog"], "odds_ratio": 13.95, "significantly_higher": true},
+    {"name": "French Bulldog", "aliases": ["Frenchie"], "odds_ratio": 6.49, "significantly_higher": true},
+    {"name": "Dogue de Bordeaux", "aliases": ["French Mastiff"], "odds_ratio": 5.31, "significantly_higher": true},
+    {"name": "Greyhound", "aliases": [], "odds_ratio": 4.26, "significantly_higher": true},
+    {"name": "Cavalier King Charles Spaniel", "aliases": ["Cavalier"], "odds_ratio": 3.45, "significantly_higher": true},
+    {"name": "Pug", "aliases": [], "odds_ratio": 3.24, "significantly_higher": true},
+    {"name": "English Springer Spaniel", "aliases": ["Springer Spaniel"], "odds_ratio": 2.74, "significantly_higher": true},
+    {"name": "Golden Retriever", "aliases": ["Golden"], "odds_ratio": 2.65, "significantly_higher": true},
+    {"name": "Boxer", "aliases": [], "odds_ratio": 2.26, "significantly_higher": false},
+    {"name": "Pomeranian", "aliases": [], "odds_ratio": 2.12, "significantly_higher": false},
+    {"name": "Staffordshire Bull Terrier", "aliases": ["Staffy"], "odds_ratio": 1.50, "significantly_higher": false},
+    {"name": "Siberian Husky", "aliases": ["Husky"], "odds_ratio": 1.18, "significantly_higher": false},
+    {"name": "Beagle", "aliases": [], "odds_ratio": 1.15, "significantly_higher": false},
+    {"name": "Miniature Schnauzer", "aliases": [], "odds_ratio": 1.08, "significantly_higher": false},
+    {"name": "Border Collie", "aliases": [], "odds_ratio": 1.08, "significantly_higher": false},
+    {"name": "Yorkshire Terrier", "aliases": ["Yorkie"], "odds_ratio": 1.05, "significantly_higher": false},
+    {"name": "Lurcher", "aliases": [], "odds_ratio": 1.00, "significantly_higher": false},
+    {"name": "German Shepherd Dog", "aliases": ["German Shepherd", "GSD"], "odds_ratio": 0.92, "significantly_higher": false},
+    {"name": "Cocker Spaniel", "aliases": [], "odds_ratio": 0.88, "significantly_higher": false},
+    {"name": "Rottweiler", "aliases": ["Rottie"], "odds_ratio": 0.86, "significantly_higher": false},
+    {"name": "Cockapoo", "aliases": [], "odds_ratio": 0.85, "significantly_higher": false},
+    {"name": "Mixed Breed", "aliases": ["Crossbred", "Non-designer Crossbred", "Mutt"], "odds_ratio": 0.82, "significantly_higher": false},
+    {"name": "West Highland White Terrier", "aliases": ["Westie"], "odds_ratio": 0.76, "significantly_higher": false},
+    {"name": "Bichon Frise", "aliases": ["Bichon"], "odds_ratio": 0.68, "significantly_higher": false},
+    {"name": "Border Terrier", "aliases": [], "odds_ratio": 0.61, "significantly_higher": false},
+    {"name": "Jack Russell Terrier", "aliases": ["Jack Russell"], "odds_ratio": 0.55, "significantly_higher": false},
+    {"name": "Shih Tzu", "aliases": ["Shih-tzu"], "odds_ratio": 0.47, "significantly_higher": false},
+    {"name": "Chihuahua", "aliases": [], "odds_ratio": 0.44, "significantly_higher": false},
+    {"name": "Labradoodle", "aliases": [], "odds_ratio": 0.41, "significantly_higher": false},
+    {"name": "Designer Crossbreed", "aliases": ["Designer Crossbred"], "odds_ratio": 0.33, "significantly_higher": false},
+    {"name": "Lhasa Apso", "aliases": [], "odds_ratio": 0.24, "significantly_higher": false}
+  ]
+}
+

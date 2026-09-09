@@ -1,0 +1,20 @@
+source_id,cohort,context,subgroup,n_dogs,metric,unit,center,lower_iqr,upper_iqr,statistic_type,notes
+AI_COLLAR_2025,apparently healthy,resting immobile; all day,puppy <=12 months,703 total,heart_rate,bpm,78.5,69.1,96.8,median and IQR,Age-value analysis used repeated dog-month values; subgroup dog count not reported in this summary
+AI_COLLAR_2025,apparently healthy,resting immobile; all day,adult >1 and <10 years,562,heart_rate,bpm,60.5,55.2,65.3,median and IQR,Table 1 adult cohort
+AI_COLLAR_2025,apparently healthy,resting immobile; all day,senior >=10 years,703 total,heart_rate,bpm,68.7,60.8,77.2,median and IQR,Age-value analysis used repeated dog-month values; subgroup dog count not reported in this summary
+AI_COLLAR_2025,apparently healthy,resting immobile; all day,puppy <=12 months,703 total,respiratory_rate,breaths/min,20.1,16.0,25.7,median and IQR,Age-value analysis used repeated dog-month values
+AI_COLLAR_2025,apparently healthy,resting immobile; all day,older than 12 months,703 total,respiratory_rate,breaths/min,15.7,13.1,18.7,median and IQR,Age-value analysis used repeated dog-month values
+AI_COLLAR_2025,apparently healthy,nighttime 00:00-06:00,adult >1 and <10 years,533,heart_rate,bpm,58.3,53.6,64.2,median and IQR,Nighttime is not guaranteed asleep
+AI_COLLAR_2025,apparently healthy,daytime 06:00-24:00,adult >1 and <10 years,533,heart_rate,bpm,61.3,56.3,66.7,median and IQR,Resting/immobile readings only
+AI_COLLAR_2025,apparently healthy,nighttime 00:00-06:00,adult >1 and <10 years,533,respiratory_rate,breaths/min,14.2,12.1,17.0,median and IQR,Nighttime is not guaranteed asleep
+AI_COLLAR_2025,apparently healthy,daytime 06:00-24:00,adult >1 and <10 years,533,respiratory_rate,breaths/min,17.4,15.2,19.8,median and IQR,Resting/immobile readings only
+AI_COLLAR_2025,apparently healthy,resting immobile,adult <=10 kg,84,heart_rate,bpm,65.0,60.9,69.4,median and IQR,Small dogs were significantly higher than heavier dogs
+AI_COLLAR_2025,apparently healthy,resting immobile,adult >10 kg,478,heart_rate,bpm,59.5,54.6,64.2,median and IQR,Medium to large size grouping
+AI_COLLAR_2025,apparently healthy,resting immobile,adult <=10 kg,84,respiratory_rate,breaths/min,17.2,15.0,19.9,median and IQR,Small dogs were significantly higher than heavier dogs
+AI_COLLAR_2025,apparently healthy,resting immobile,adult >10 kg,478,respiratory_rate,breaths/min,15.8,13.7,18.3,median and IQR,Medium to large size grouping
+RISHNIW_2012,apparently healthy,sleeping at home,adult,114,respiratory_rate,breaths/min,13,,,mean of within-dog means,No dog mean exceeded 23; instantaneous values above 30 were rare
+RISHNIW_2012,apparently healthy,resting awake at home,adult,subset of 114,respiratory_rate,breaths/min,19,,,mean of within-dog means,Resting awake rate exceeded sleeping rate
+LJUNGVALL_2013,subclinical left-sided heart disease,sleeping at home,adult,190,respiratory_rate,breaths/min,16,,,mean of within-dog means,Most means below 25; one mean above 30
+LJUNGVALL_2013,subclinical left-sided heart disease,resting awake at home,adult,190,respiratory_rate,breaths/min,21,,,mean of within-dog means,Resting awake higher than sleeping
+PORCIELLO_2016,medically controlled stable CHF,sleeping at home,adult,51,respiratory_rate,breaths/min,20,7,39,median and range,Range columns are minimum and maximum not IQR
+

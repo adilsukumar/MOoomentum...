@@ -1,0 +1,29 @@
+﻿[window] building neck-only windows...
+[window] 119,826 real windows
+[augment] generated 2,976 augmented windows from 372 real rare-class windows
+
+=== Baseline (no augmentation), for direct comparison on this exact run ===
+  [baseline] fold 1/5 train_size=95,933
+  [baseline] fold 2/5 train_size=95,901
+  [baseline] fold 3/5 train_size=95,750
+  [baseline] fold 4/5 train_size=95,806
+  [baseline] fold 5/5 train_size=95,914
+
+=== With augmentation (rare classes only) ===
+  [augmented] fold 1/5 train_size=98,805
+  [augmented] fold 2/5 train_size=98,509
+  [augmented] fold 3/5 train_size=98,302
+  [augmented] fold 4/5 train_size=98,374
+  [augmented] fold 5/5 train_size=97,218
+
+--- Rare-class F1 before vs after ---
+Bowing: F1 0.000 -> 0.000 (precision 0.000->0.000, recall 0.000->0.000, support=7.0)
+Jumping: F1 0.000 -> 0.000 (precision 0.000->0.000, recall 0.000->0.000, support=15.0)
+Galloping: F1 0.000 -> 0.000 (precision 0.000->0.000, recall 0.000->0.000, support=122.0)
+Tugging: F1 0.000 -> 0.006 (precision 0.000->0.012, recall 0.000->0.004, support=228.0)
+
+--- Common-class metrics (unaffected classes, checking no dilution) ---
+Overall accuracy: 0.6603 -> 0.6590
+Overall macro F1: 0.4125 -> 0.4116
+
+Saved augmentation_results.json to D:\23_MotionSense_ML\models

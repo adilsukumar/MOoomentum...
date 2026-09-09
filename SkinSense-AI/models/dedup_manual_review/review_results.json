@@ -1,0 +1,30 @@
+{
+  "reviewed_groups": 50,
+  "review_date": "2026-08-23",
+  "sampling_seed": 20260823,
+  "method_breakdown": {
+    "phash_only": 10,
+    "roboflow_family_with_exact_or_phash_evidence": 15,
+    "md5_exact_with_phash_evidence": 15,
+    "additional_phash_overlap": 10
+  },
+  "groups_touching_bacterial_dermatosis": 30,
+  "visually_same_underlying_photo": 50,
+  "false_positive_dedup_groups": 0,
+  "false_positive_rate": 0.0,
+  "review_notes": [
+    "All ten phash-only pairs were recognizable as the same source photo after crop, resize, rotation, or color transformation; none appeared to be merely similar-but-distinct dogs or lesions.",
+    "All Roboflow-family pairs were augmented views of the same source photo.",
+    "All md5-exact pairs were visually identical as expected.",
+    "Thirty reviewed groups touched Bacterial_dermatosis; none showed a false-positive merge, so dedup did not remove a legitimate distinct bacterial photo in this sample.",
+    "The bacterial problem found in these groups is conflicting labels for the same photo, not erroneous duplicate detection: many are labeled Bacterial_dermatosis in dataset1 and Dermatitis elsewhere.",
+    "This is a 50-group sample, not proof that all 2,175 multi-member groups are error-free. Perceptual-hash threshold changes should repeat this audit."
+  ],
+  "contact_sheets": [
+    "sheet_1.jpg",
+    "sheet_2.jpg",
+    "sheet_3.jpg",
+    "sheet_4.jpg",
+    "sheet_5.jpg"
+  ]
+}

@@ -1,0 +1,30 @@
+Classes (5): ['Allergic_dermatitis', 'Bacterial_dermatosis', 'Demodicosis', 'Fungal_infection', 'Healthy']
+  train: 6065 images
+  val: 1237 images
+  test: 1337 images
+[efficientnetv2_rw_s] epoch 1/18  train_loss=2.1365  val_acc=0.4721  val_macroF1=0.4895  (225.3s)
+[efficientnetv2_rw_s] epoch 2/18  train_loss=1.3966  val_acc=0.5643  val_macroF1=0.5784  (44.4s)
+[efficientnetv2_rw_s] epoch 3/18  train_loss=1.2684  val_acc=0.6095  val_macroF1=0.6093  (43.9s)
+[efficientnetv2_rw_s] epoch 4/18  train_loss=1.2119  val_acc=0.6459  val_macroF1=0.6396  (41.4s)
+[efficientnetv2_rw_s] epoch 5/18  train_loss=1.1794  val_acc=0.6419  val_macroF1=0.6387  (36.4s)
+[efficientnetv2_rw_s] epoch 6/18  train_loss=1.1497  val_acc=0.6548  val_macroF1=0.6530  (36.6s)
+[efficientnetv2_rw_s] epoch 7/18  train_loss=1.1269  val_acc=0.6661  val_macroF1=0.6587  (44.9s)
+[efficientnetv2_rw_s] epoch 8/18  train_loss=1.1134  val_acc=0.6863  val_macroF1=0.6736  (40.9s)
+[efficientnetv2_rw_s] epoch 9/18  train_loss=1.1075  val_acc=0.6718  val_macroF1=0.6643  (50.6s)
+[efficientnetv2_rw_s] epoch 10/18  train_loss=1.0978  val_acc=0.6815  val_macroF1=0.6691  (63.4s)
+[efficientnetv2_rw_s] epoch 11/18  train_loss=1.0885  val_acc=0.6742  val_macroF1=0.6667  (98.8s)
+[efficientnetv2_rw_s] epoch 12/18  train_loss=1.0795  val_acc=0.7033  val_macroF1=0.6857  (100.8s)
+[efficientnetv2_rw_s] epoch 13/18  train_loss=1.0795  val_acc=0.6783  val_macroF1=0.6737  (96.8s)
+[efficientnetv2_rw_s] epoch 14/18  train_loss=1.0819  val_acc=0.7146  val_macroF1=0.6931  (101.0s)
+[efficientnetv2_rw_s] epoch 15/18  train_loss=1.0742  val_acc=0.7017  val_macroF1=0.6842  (158.5s)
+[efficientnetv2_rw_s] epoch 16/18  train_loss=1.0791  val_acc=0.7098  val_macroF1=0.6864  (49.8s)
+[efficientnetv2_rw_s] epoch 17/18  train_loss=1.0651  val_acc=0.7138  val_macroF1=0.6892  (105.9s)
+[efficientnetv2_rw_s] epoch 18/18  train_loss=1.0763  val_acc=0.7041  val_macroF1=0.6858  (138.7s)
+
+=== [efficientnetv2_rw_s] TEST SET RESULTS ===
+Accuracy: 0.6657   Macro-F1: 0.6519
+  Allergic_dermatitis    precision=0.984  recall=0.506  f1=0.668  support=354
+  Bacterial_dermatosis   precision=0.016  recall=0.875  f1=0.032  support=8
+  Demodicosis            precision=0.983  recall=0.929  f1=0.955  support=252
+  Fungal_infection       precision=1.000  recall=0.545  f1=0.706  support=486
+  Healthy                precision=0.936  recall=0.865  f1=0.899  support=237

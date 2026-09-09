@@ -1,0 +1,20 @@
+{
+  "dog_id": "dog-001",
+  "context": "sleep_candidate",
+  "baseline_days": 10,
+  "eligible": true,
+  "metrics": {
+    "heart_rate_bpm": {
+      "median": 60.0,
+      "mad_scale": 1.0,
+      "sample_count": 10,
+      "day_count": 10
+    },
+    "respiratory_rate_bpm": {
+      "median": 15.0,
+      "mad_scale": 0.5,
+      "sample_count": 10,
+      "day_count": 10
+    }
+  }
+}

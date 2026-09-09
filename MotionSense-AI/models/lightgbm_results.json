@@ -1,0 +1,134 @@
+{
+  "neck_coarse": {
+    "accuracy": 0.956044598000434,
+    "macro_f1": 0.9488201942379,
+    "per_class": {
+      "Active": {
+        "precision": 0.9606870663178251,
+        "recall": 0.9737127308783177,
+        "f1-score": 0.9671560431506379,
+        "support": 43367.0
+      },
+      "Other": {
+        "precision": 0.9218901098901099,
+        "recall": 0.907136678200692,
+        "f1-score": 0.9144538914323087,
+        "support": 23120.0
+      },
+      "Resting": {
+        "precision": 0.9668304437039965,
+        "recall": 0.9628789441121881,
+        "f1-score": 0.9648506481307534,
+        "support": 53339.0
+      }
+    }
+  },
+  "neck_fine": {
+    "accuracy": 0.6734014320765109,
+    "macro_f1": 0.42842579801904856,
+    "per_class": {
+      "Bowing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 7.0
+      },
+      "Carrying object": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 234.0
+      },
+      "Drinking": {
+        "precision": 0.9454342984409799,
+        "recall": 0.7331606217616581,
+        "f1-score": 0.8258754863813229,
+        "support": 1158.0
+      },
+      "Eating": {
+        "precision": 0.26663564448580734,
+        "recall": 0.2677570093457944,
+        "f1-score": 0.26719515038470504,
+        "support": 2140.0
+      },
+      "Galloping": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 122.0
+      },
+      "Jumping": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 15.0
+      },
+      "Lying chest": {
+        "precision": 0.5062447131412648,
+        "recall": 0.502519016101946,
+        "f1-score": 0.5043749845078452,
+        "support": 20246.0
+      },
+      "Pacing": {
+        "precision": 0.2422145328719723,
+        "recall": 0.0603448275862069,
+        "f1-score": 0.0966183574879227,
+        "support": 1160.0
+      },
+      "Panting": {
+        "precision": 0.4100944577216342,
+        "recall": 0.48686077146524354,
+        "f1-score": 0.44519257497606324,
+        "support": 14803.0
+      },
+      "Playing": {
+        "precision": 0.8606460040375252,
+        "recall": 0.8899189587426326,
+        "f1-score": 0.875037730153939,
+        "support": 16288.0
+      },
+      "Shaking": {
+        "precision": 0.9590909090909091,
+        "recall": 0.9701149425287356,
+        "f1-score": 0.9645714285714285,
+        "support": 435.0
+      },
+      "Sitting": {
+        "precision": 0.379371797727779,
+        "recall": 0.3453310351819933,
+        "f1-score": 0.36155193461068946,
+        "support": 9863.0
+      },
+      "Sniffing": {
+        "precision": 0.967973722028331,
+        "recall": 0.9850621539747205,
+        "f1-score": 0.9764431788765209,
+        "support": 19146.0
+      },
+      "Standing": {
+        "precision": 0.23437753611426718,
+        "recall": 0.17135398125074167,
+        "f1-score": 0.1979709350150809,
+        "support": 8427.0
+      },
+      "Trotting": {
+        "precision": 0.880690737833595,
+        "recall": 0.9046302695231514,
+        "f1-score": 0.8925,
+        "support": 13023.0
+      },
+      "Tugging": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 228.0
+      },
+      "Walking": {
+        "precision": 0.8438100872651975,
+        "recall": 0.9105418561966323,
+        "f1-score": 0.8759068053583081,
+        "support": 12531.0
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+[window] 1.0s / stride 0.5s
+  fold 1/5 complete
+  fold 2/5 complete
+  fold 3/5 complete
+  fold 4/5 complete
+  fold 5/5 complete
+{
+  "accuracy": 0.9556440171582128,
+  "macro_f1": 0.9484530835206962,
+  "window_seconds": 1.0,
+  "stride_seconds": 0.5,
+  "n_windows": 119826,
+  "elapsed_seconds": 64.38332748413086
+}
+[window] 2.0s / stride 1.0s
+  fold 1/5 complete
+  fold 2/5 complete
+  fold 3/5 complete
+  fold 4/5 complete
+  fold 5/5 complete
+{
+  "accuracy": 0.9685650281384888,
+  "macro_f1": 0.9634248499004928,
+  "window_seconds": 2.0,
+  "stride_seconds": 1.0,
+  "n_windows": 54907,
+  "elapsed_seconds": 41.041125535964966
+}
+[window] 3.0s / stride 1.0s
+  fold 1/5 complete
+  fold 2/5 complete
+  fold 3/5 complete
+  fold 4/5 complete
+  fold 5/5 complete
+{
+  "accuracy": 0.9777107591523697,
+  "macro_f1": 0.9745700128907244,
+  "window_seconds": 3.0,
+  "stride_seconds": 1.0,
+  "n_windows": 50069,
+  "elapsed_seconds": 55.81784629821777
+}
+Saved D:\23_MotionSense_ML\models\window_length_results.json

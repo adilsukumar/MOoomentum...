@@ -1,0 +1,897 @@
+[
+  {
+    "review_index": 1,
+    "group_id": "357",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Hypersensitivity",
+      "Hypersensitivity_allergic_dermatosis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Hypersensitivity_allergic_dermatosis\\B9781416056638000070_f007-005-9781416056638.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Hypersensitivity\\B9781416056638000070_f007-005-9781416056638_jpg.rf.ec4cce96c277c0b63fe300543074dd3a.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 2,
+    "group_id": "300",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Fungal_infections"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Fungal_infections\\pic36.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Fungal_infections\\pic36_jpg.rf.b7fb0f5ca63bc72fd6ed68da146d98e7.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 3,
+    "group_id": "339",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Healthy"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Healthy\\pic15.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Healthy\\pic15_jpg.rf.9fd924bad95c251fde574c613f420a81.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 4,
+    "group_id": "296",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Fungal_infections"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Fungal_infections\\pic24.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Fungal_infections\\pic24_jpg.rf.c640ed1f9e1831ba7e5e9ee3a30abe6c.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 5,
+    "group_id": "360",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Hypersensitivity",
+      "Hypersensitivity_allergic_dermatosis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Hypersensitivity_allergic_dermatosis\\B9781416056638000070_f007-017-9781416056638.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Hypersensitivity\\B9781416056638000070_f007-017-9781416056638_jpg.rf.cb24d3d360d48215ea8fee360ba70b02.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 6,
+    "group_id": "367",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Hypersensitivity",
+      "Hypersensitivity_allergic_dermatosis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Hypersensitivity_allergic_dermatosis\\pic7.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Hypersensitivity_allergic_dermatosis\\pic8.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 7,
+    "group_id": "340",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Healthy"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Healthy\\pic18.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Healthy\\pic18_jpg.rf.f9949e85fa48aebd0af7d92ee515a07b.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 8,
+    "group_id": "299",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Fungal_infections"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Fungal_infections\\pic35.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Fungal_infections\\pic35_jpg.rf.dbddad597f0cf1e93ed7884dee88b96c.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 9,
+    "group_id": "346",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Healthy"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Healthy\\pic48.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Healthy\\pic48_jpg.rf.9c4f974eab2326df16a480078c690d1b.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 10,
+    "group_id": "305",
+    "method_bucket": "phash_only",
+    "methods": [
+      "phash"
+    ],
+    "raw_labels": [
+      "Healthy"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Healthy\\075.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\test\\Healthy\\075_jpg.rf.f10d5301e05f89372e15d834b4ed7cee.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 11,
+    "group_id": "1360",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac1_jpg.rf.5311e7813084cdc109ec65b443bedd3c.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac1_jpg.rf.7f8d7c38fca8660da74e7f4def729511.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 12,
+    "group_id": "1361",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac2_jpg.rf.7c0cb25e17ed14b81f79d441ba8bcc78.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac2_jpg.rf.df80a0dd73b4314baefc3a0db0cf6de9.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 13,
+    "group_id": "1141",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac3_jpg.rf.45638b6db1e0df8a4d5808cdd9978de0.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac3_jpg.rf.cf930f7deadfb0336f8e0e0bdd044d96.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 14,
+    "group_id": "221",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac4_png.rf.0a79259ea2a232c5db0c60a2ccd3b63d.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bac4_png.rf.a545b39815911af7dc2215a55e48987b.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 15,
+    "group_id": "1135",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacc1_jpg.rf.0c5595790601e8855cab203843db6628.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacc1_jpg.rf.20750919c0b0ec92a495abfd6ff4cb20.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 16,
+    "group_id": "1136",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis",
+      "ringworm"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacc2_jpg.rf.80fccb9e00099853407a1a7b1e2f7d97.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacc2_jpg.rf.c787f922e95f4e1b9aee8ee71def9797.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 17,
+    "group_id": "1137",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacc3_jpg.rf.509c8182cc022bd2fdb55db1ae47eb70.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacc3_jpg.rf.cbbdf34854031222d757e861a1021e55.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 18,
+    "group_id": "1285",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacteria3_png.rf.399d3cc1019e2c019ec4d7cf6f6f3a2e.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacteria3_png.rf.a1cd212c26b24e427161f4e18c5658d9.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 19,
+    "group_id": "222",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacteria4_png.rf.1eeb1d0161eb2b6a6b5c33e4fd862d63.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacteria4_png.rf.2d5130bd911d756a4efc1e364b21dc9c.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 20,
+    "group_id": "1286",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial1_png.rf.63b64d3b17536fd829fe2312c131fd61.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial1_png.rf.8bd258f1ea0d00eb3e5a9102853cf660.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 21,
+    "group_id": "995",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial_1_png.rf.30e6141cb6d55123061bf4715c64813f.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial_1_png.rf.32ed79a2a0db7d1a883da9cae6755563.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 22,
+    "group_id": "1287",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial_2_jpg.rf.3ecb850e33ee28a0bea403a45625ee83.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial_2_jpg.rf.57897be3c7eacc71cc9ef501002520e2.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 23,
+    "group_id": "1140",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacterial_Image_1_jpg.rf.bca50760f3bcdb5e444609138d9d14ea.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacterial_Image_1_jpg.rf.f5236c4b5b2eeb1383ed9667d012d8b2.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 24,
+    "group_id": "223",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial_Image_2_jpg.rf.04134948f0b2b75e1de9f6d9070bc2c6.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\Bacterial_Image_2_jpg.rf.6685f2d528b09526b1782d6c3ed630c2.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 25,
+    "group_id": "1142",
+    "method_bucket": "roboflow",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacterial_Image_4_jpg.rf.4814e44319d2e297cec30114ea759215.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacterial_Image_4_jpg.rf.58cb991e76d179755fa5a35d120ca161.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 26,
+    "group_id": "988",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\56.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\56_jpg.rf.f6ff2179cfe4f1a4e514839097603309.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 27,
+    "group_id": "989",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\752.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\752_jpg.rf.3d3eb33ad4eb0b6e762e4080119b38cd.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 28,
+    "group_id": "992",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\89.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\89_jpg.rf.28742fb1d239bde8d4b7940578b82698.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 29,
+    "group_id": "1131",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\acral_lick_dermatitis_4935_7_600.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\acral_lick_dermatitis_4935_7_600_jpg.rf.5ba8a80b7627e3f12b7d7dc8bdb75bd7.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 30,
+    "group_id": "1132",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\acute_moist_dermatitis_4935_8_600.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\acute_moist_dermatitis_4935_8_600_jpg.rf.b5a0d7cd37c3c58c796033fcb42156fb.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 31,
+    "group_id": "1133",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\atopic_dermatitis_4935_3_600.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\atopic_dermatitis_4935_3_600_jpg.rf.34a0478fc7b86f5fe29da940ad13e3e5.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 32,
+    "group_id": "1134",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\atopic_dermatitis_in_cats_causes_symptoms_and_treatment_4206.webp",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\atopic_dermatitis_in_cats_causes_symptoms_and_treatment_4206_webp_jpg.rf.dba91616072dec9388c457355e7ccc93.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 33,
+    "group_id": "1138",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis",
+      "Fungal_infections"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacterial-infection-pustules-ri-livinga-2-300x300.jpg",
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Fungal_infections\\pic51.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 34,
+    "group_id": "1139",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\bacterial-skin-infection-s_720250150.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\bacterial-skin-infection-s_720250150_jpg.rf.466ab1e5f34a7898c2f7f5f4132d9414.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 35,
+    "group_id": "1143",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\black-spots-hair-loss-bacterial-infection-dr-spiegel-440.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\black-spots-hair-loss-bacterial-infection-dr-spiegel-440_jpg.rf.ae673399e57f4e6564a341a60f1a5747.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 36,
+    "group_id": "1144",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\black-spots-infection-191861127511.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\black-spots-infection-191861127511_jpg.rf.83912f44adce81bdcd65c855d61a640c.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 37,
+    "group_id": "1145",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\contact_dermatitis_4935_9_600.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\contact_dermatitis_4935_9_600_jpg.rf.371aa99d6a7fcebc024222963b430ce8.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 38,
+    "group_id": "1148",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\fly_strike_dermatitis_in_dogs_4935_6_600.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\fly_strike_dermatitis_in_dogs_4935_6_600_jpg.rf.0042a1fbc4f1d47abac4995d5dd90f5c.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 39,
+    "group_id": "1149",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\folliculitis-two-spiegel.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\folliculitis-two-spiegel_jpg.rf.cf076de994383d8b91b0939f87c2327d.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 40,
+    "group_id": "1150",
+    "method_bucket": "md5",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Bacterial_dermatosis",
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Bacterial_dermatosis\\food_allergy_dermatitis_4935_5_600.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\food_allergy_dermatitis_4935_5_600_jpg.rf.41c1d44b90fc0e181db0b5c2e9e52f7a.jpg"
+    ],
+    "touches_bacterial": true
+  },
+  {
+    "review_index": 41,
+    "group_id": "1625",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Healthy"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Healthy\\HEALTHY_026_jpg.rf.8eb7c6ee28b9eb1196fc0f2d86ab3115.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Healthy\\HEALTHY_026_jpg.rf.a2ca40bd2974c6c6a38d7c23ba755476.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 42,
+    "group_id": "1846",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Healthy"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\dataset1\\Dogs\\Healthy\\094.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Healthy\\094_jpg.rf.91220fbabb151fb08904f793ec3d42e0.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 43,
+    "group_id": "2246",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "ringworm"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\train\\ringworm\\WIN_20240514_17_27_14_Pro_jpg.rf.b3dbaac7455c5307f9e936a7121652b7.jpg",
+      "D:\\22_SkinSense_ML\\dataset3\\images\\ringworm_2679.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 44,
+    "group_id": "2556",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "ringworm"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\valid\\ringworm\\ringworm-148-_jpg.rf.bee7d7576e186668d2ba440ab8be22e6.jpg",
+      "D:\\22_SkinSense_ML\\dataset3\\images\\ringworm_3823.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 45,
+    "group_id": "2517",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "ringworm"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\valid\\ringworm\\WIN_20240514_17_29_17_Pro_jpg.rf.1412bee08f5bbe1b9d83088b359655fc.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\valid\\ringworm\\WIN_20240514_17_29_17_Pro_jpg.rf.c5cd009312a25bd23c649a1c5a61f764.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 46,
+    "group_id": "2518",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "ringworm"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\valid\\ringworm\\WIN_20240514_17_29_24_Pro_jpg.rf.3ba18fc421cf48dc3066377fb57b1df4.jpg",
+      "D:\\22_SkinSense_ML\\dataset3\\images\\ringworm_3782.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 47,
+    "group_id": "2547",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "ringworm"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\valid\\ringworm\\ringworm-128-_jpg.rf.f0bdf19b4461eb56fe45633853ebdeeb.jpg",
+      "D:\\22_SkinSense_ML\\dataset3\\images\\ringworm_3812.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 48,
+    "group_id": "1021",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\HOT-SPOT-IN-DOG-HOW-vet-treated-symptom-prevention_-flea-bite-moist-eczema_dog-itching-000475_png_jpg.rf.b6875ac3ee87545926f06bd0f36d0dc1.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\Dermatitis\\HOT-SPOT-IN-DOG-HOW-vet-treated-symptom-prevention_-flea-bite-moist-eczema_dog-itching-000475_png_jpg.rf.c531c8a2faa00a8bf7a97808fe90f6d8.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 49,
+    "group_id": "765",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "roboflow_stem",
+      "phash"
+    ],
+    "raw_labels": [
+      "demodicosis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\train\\demodicosis\\scabies_123_png_jpg.rf.1b2c3c7f837041d0601b350a4812f8bb.jpg",
+      "D:\\22_SkinSense_ML\\datatset2\\train\\demodicosis\\scabies_123_png_jpg.rf.60cac57ba555210bc64bd4cb9f3596e4.jpg"
+    ],
+    "touches_bacterial": false
+  },
+  {
+    "review_index": 50,
+    "group_id": "1368",
+    "method_bucket": "phash_overlap",
+    "methods": [
+      "md5_exact",
+      "phash"
+    ],
+    "raw_labels": [
+      "Dermatitis"
+    ],
+    "paths_shown": [
+      "D:\\22_SkinSense_ML\\datatset2\\valid\\Dermatitis\\hotspot-110-_jpg.rf.47ae5c004128f0140a400149e3a93465.jpg",
+      "D:\\22_SkinSense_ML\\dataset3\\images\\Dermatitis_3180.jpg"
+    ],
+    "touches_bacterial": false
+  }
+]

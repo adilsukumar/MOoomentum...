@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+._*
+__MACOSX/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Reproducible generated demo input.
+examples/synthetic_session.csv
+
+# The extracted CC BY 4.0 WAV files are tracked; avoid also committing the
+# duplicate upstream archive.
+data/public/invoxia_dog_health_vitals/ecg_data.zip

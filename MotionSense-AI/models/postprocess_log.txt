@@ -1,0 +1,19 @@
+﻿=== 1. Temporal smoothing ===
+[smoothing N=5] accuracy=0.9481 macro_f1=0.9404 (baseline accuracy=0.9558 macro_f1=0.9497)
+[smoothing N=10] accuracy=0.9421 macro_f1=0.9344 (baseline accuracy=0.9558 macro_f1=0.9497)
+
+=== 2. Confidence-aware output ===
+[confidence>=0.5] coverage=0.983 accuracy_on_confident=0.9644
+[confidence>=0.6] coverage=0.961 accuracy_on_confident=0.9733
+[confidence>=0.7] coverage=0.937 accuracy_on_confident=0.98
+[confidence>=0.8] coverage=0.904 accuracy_on_confident=0.9857
+[confidence>=0.9] coverage=0.840 accuracy_on_confident=0.991
+
+=== 3. Hierarchical gating ===
+[hierarchical gate, fine_threshold=0.4] effective_accuracy=0.9154 active_windows_given_specific_label=0.994
+[hierarchical gate, fine_threshold=0.5] effective_accuracy=0.9075 active_windows_given_specific_label=0.953
+[hierarchical gate, fine_threshold=0.6] effective_accuracy=0.8916 active_windows_given_specific_label=0.883
+[hierarchical gate, fine_threshold=0.7] effective_accuracy=0.8683 active_windows_given_specific_label=0.800
+[reference] plain ungated 17-class accuracy (from oof_export's full fine model): 0.6603
+
+Saved postprocess_results.json to D:\23_MotionSense_ML\models

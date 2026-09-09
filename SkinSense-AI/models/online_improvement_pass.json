@@ -1,0 +1,40 @@
+{
+  "baseline_accuracy": 0.9240030097817908,
+  "baseline_macro_f1": 0.930977501174024,
+  "baseline_checkpoint": "models/convnext_4class_focal/best.pt",
+  "class_mapping": [
+    "Allergic_dermatitis",
+    "Demodicosis",
+    "Fungal_infection",
+    "Healthy"
+  ],
+  "sources": {
+    "aihub_561": {
+      "decision": "excluded_from_current_multiclass_model",
+      "reason": "Access is restricted and available ordinary-camera annotations are lesion/symptom labels with diagnosis=null, not compatible disease diagnoses.",
+      "downloaded_images": 0
+    },
+    "YarramasuSindhuja_AI_Powered_dog_skin_disease_detection": {
+      "decision": "excluded",
+      "reason": "Repository contains a README only; no images, labels, patient IDs, or usable provenance.",
+      "downloaded_images": 0
+    }
+  },
+  "deduplication": {
+    "candidate_images": 0,
+    "exact_duplicates_rejected": 0,
+    "near_duplicates_rejected": 0,
+    "unique_usable_images": 0,
+    "existing_pipeline": "scripts/prepare_data.py",
+    "existing_split_unit": "near-duplicate/source-photo group"
+  },
+  "training_runs": 0,
+  "best_valid_accuracy": 0.9240030097817908,
+  "test_leakage_detected": false,
+  "accuracy_98_achieved": false,
+  "changes_made": [
+    "Audited existing stored metrics and preprocessing without retraining.",
+    "Audited both proposed sources for access, label compatibility, provenance, and files.",
+    "Did not download restricted/incompatible data and did not alter the shipped model."
+  ]
+}

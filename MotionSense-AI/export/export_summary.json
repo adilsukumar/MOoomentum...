@@ -1,0 +1,30 @@
+{
+  "coarse": {
+    "classes": [
+      "Active",
+      "Other",
+      "Resting"
+    ],
+    "n_features": 64,
+    "onnx_path": "export\\behavior_coarse_lgbm.onnx",
+    "label_agreement": 1.0,
+    "max_proba_diff": 0.010777267312403305,
+    "n_parity_samples": 5000
+  },
+  "active_fine": {
+    "classes": [
+      "Galloping",
+      "Jumping",
+      "Pacing",
+      "Playing",
+      "Trotting",
+      "Tugging",
+      "Walking"
+    ],
+    "n_features": 64,
+    "onnx_path": "export\\behavior_active_fine_lgbm.onnx",
+    "label_agreement": 1.0,
+    "max_proba_diff": 0.00022215182066875894,
+    "n_parity_samples": 5000
+  }
+}

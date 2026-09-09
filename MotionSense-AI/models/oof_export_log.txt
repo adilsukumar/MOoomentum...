@@ -1,0 +1,15 @@
+﻿[load] 10,611,068 rows in 21.6s
+[window] building neck-only windows...
+[window] 119,826 windows in 15.3s
+[fold 1/5] done in 32.9s (held out 9 dogs)
+[fold 2/5] done in 33.6s (held out 9 dogs)
+[fold 3/5] done in 31.6s (held out 9 dogs)
+[fold 4/5] done in 32.6s (held out 9 dogs)
+[fold 5/5] done in 33.3s (held out 9 dogs)
+[active-fine fold 1/5] done
+[active-fine fold 2/5] done
+[active-fine fold 3/5] done
+[active-fine fold 4/5] done
+[active-fine fold 5/5] done
+
+Saved OOF predictions to D:\23_MotionSense_ML\models\oof_predictions.joblib

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Goat MotionSense — Piezo Monitor</title>
+  <style>
+    :root { font-family: Inter, system-ui, sans-serif; color: #e5e7eb; background: #0b1220; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
+    main { width: min(900px, 92vw); }
+    h1 { margin-bottom: .25rem; } .sub { color:#94a3b8; margin-top:0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+    .card { background:#111c30; border:1px solid #26344d; padding:20px; border-radius:14px; }
+    .value { font-size:2rem; font-weight:750; margin:.4rem 0; }
+    #status { border-left:8px solid #16a34a; }
+    meter { width:100%; height:22px; } canvas { width:100%; height:180px; background:#07101f; border-radius:10px; }
+    button,input { font:inherit; margin:.3rem; padding:.65rem .9rem; border-radius:8px; border:1px solid #40506b; }
+    button { cursor:pointer; background:#2563eb; color:white; } input { width:120px; background:#07101f; color:white; }
+    .note { color:#94a3b8; font-size:.9rem; }
+  </style>
+</head>
+<body><main>
+  <h1>Piezo pressure monitor</h1>
+  <p class="sub">12-bit ADC defaults · baseline 0 · press 120 · abnormal 700</p>
+  <section class="grid">
+    <article class="card" id="status"><span>Status</span><div class="value" id="label">Normal</div><div id="message">Piezo is near its baseline.</div></article>
+    <article class="card"><span>Raw ADC</span><div class="value" id="raw">0</div><span>Delta from baseline: <b id="delta">0</b></span></article>
+    <article class="card"><span>Force intensity</span><div class="value"><span id="intensity">0</span>%</div><meter id="meter" min="0" max="100" value="0"></meter></article>
+  </section>
+  <section class="card" style="margin-top:16px"><canvas id="chart" width="850" height="180"></canvas></section>
+  <section class="card" style="margin-top:16px">
+    <button id="serial">Connect Web Serial</button>
+    <button onclick="feed(180)">Simulate press</button>
+    <button onclick="feed(900)">Simulate too hard</button>
+    <label>Raw value <input id="manual" type="number" min="0" max="4095" value="0"></label>
+    <button onclick="feed(Number(document.getElementById('manual').value))">Send</button>
+    <p class="note">Serial input may be a number per line or JSON such as {"piezo": 245}. Manual piezo presses never alter rumination predictions.</p>
+  </section>
+<script>
+const baseline=0, press=120, abnormal=700, history=Array(120).fill(0);
+const $=id=>document.getElementById(id), canvas=$('chart'), ctx=canvas.getContext('2d');
+function feed(value){
+  value=Math.max(0,Math.min(4095,Number(value)||0)); const d=Math.abs(value-baseline);
+  let s=d>=abnormal?['Abnormal / too hard','#dc2626','Excessive piezo impact detected.']:d>=press?['Pressed','#f59e0b','Piezo press/spike detected.']:d>=30?['Light touch','#3b82f6','Small piezo response detected.']:['Normal','#16a34a','Piezo is near its baseline.'];
+  $('label').textContent=s[0]; $('status').style.borderLeftColor=s[1]; $('message').textContent=s[2]; $('raw').textContent=value.toFixed(0); $('delta').textContent=d.toFixed(0);
+  const pct=Math.min(100,d/abnormal*100); $('intensity').textContent=pct.toFixed(1); $('meter').value=pct;
+  history.push(value); history.shift(); draw(s[1]);
+}
+function draw(color){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.strokeStyle=color;ctx.lineWidth=2;ctx.beginPath();history.forEach((v,i)=>{const x=i/(history.length-1)*canvas.width,y=canvas.height-Math.min(v,1000)/1000*canvas.height;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();}
+$('serial').onclick=async()=>{if(!('serial'in navigator))return alert('Use Chrome/Edge on localhost for Web Serial.');const port=await navigator.serial.requestPort();await port.open({baudRate:115200});const reader=port.readable.pipeThrough(new TextDecoderStream()).getReader();let buf='';while(true){const {value,done}=await reader.read();if(done)break;buf+=value;const lines=buf.split(/\r?\n/);buf=lines.pop();for(const line of lines){try{const x=JSON.parse(line);feed(x.piezo??x.piezo_raw)}catch{feed(line)}}}};
+draw('#16a34a');
+</script></main></body></html>

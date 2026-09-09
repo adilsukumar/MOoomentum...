@@ -1,0 +1,108 @@
+{
+  "accuracy": 0.9588069367249178,
+  "macro_f1": 0.9522757184813394,
+  "n_base_features": 64,
+  "n_extended_features": 42,
+  "top20_importance": [
+    {
+      "feature": "ANeck_mag_std",
+      "importance": 0.09188622504965308,
+      "is_new": false
+    },
+    {
+      "feature": "ANeck_y_mean",
+      "importance": 0.07392754087750132,
+      "is_new": false
+    },
+    {
+      "feature": "ANeck_y_min",
+      "importance": 0.07211874371433959,
+      "is_new": false
+    },
+    {
+      "feature": "ANeck_mag_jerk_rms",
+      "importance": 0.058872704322014385,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_y_max",
+      "importance": 0.04875036840203119,
+      "is_new": false
+    },
+    {
+      "feature": "ANeck_mag_jerk_std",
+      "importance": 0.04477548324423294,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_mag_max",
+      "importance": 0.03889161130091698,
+      "is_new": false
+    },
+    {
+      "feature": "ANeck_z_jerk_rms",
+      "importance": 0.03304094137054972,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_z_jerk_std",
+      "importance": 0.0326766578066907,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_y_jerk_std",
+      "importance": 0.03144597783436729,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_y_jerk_rms",
+      "importance": 0.029642106301391496,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_z_std",
+      "importance": 0.027871630865111068,
+      "is_new": false
+    },
+    {
+      "feature": "GNeck_corr_yz",
+      "importance": 0.027681655474722032,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_y_std",
+      "importance": 0.025425572837833588,
+      "is_new": false
+    },
+    {
+      "feature": "ANeck_mag_min",
+      "importance": 0.024199667214937482,
+      "is_new": false
+    },
+    {
+      "feature": "GNeck_x_jerk_std",
+      "importance": 0.02400832870939288,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_x_jerk_rms",
+      "importance": 0.020252495466714475,
+      "is_new": true
+    },
+    {
+      "feature": "GNeck_x_jerk_rms",
+      "importance": 0.018656496405263265,
+      "is_new": true
+    },
+    {
+      "feature": "ANeck_x_jerk_std",
+      "importance": 0.015405103080632362,
+      "is_new": true
+    },
+    {
+      "feature": "GNeck_y_jerk_std",
+      "importance": 0.014814331344757417,
+      "is_new": true
+    }
+  ]
+}

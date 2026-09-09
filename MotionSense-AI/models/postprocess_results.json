@@ -1,0 +1,97 @@
+{
+  "temporal_smoothing": {
+    "baseline": {
+      "accuracy": 0.9557942349740457,
+      "macro_f1": 0.9497156807463504
+    },
+    "smoothed_N5": {
+      "accuracy": 0.948116435498139,
+      "macro_f1": 0.9404499811215162,
+      "per_class": {
+        "Active": {
+          "precision": 0.940831437619876,
+          "recall": 0.9727442525422556,
+          "f1-score": 0.9565217391304348,
+          "support": 43367.0
+        },
+        "Other": {
+          "precision": 0.9527213802306739,
+          "recall": 0.8646193771626297,
+          "f1-score": 0.9065348510271642,
+          "support": 23120.0
+        },
+        "Resting": {
+          "precision": 0.9523756619634856,
+          "recall": 0.9642850447139991,
+          "f1-score": 0.9582933532069495,
+          "support": 53339.0
+        }
+      }
+    },
+    "smoothed_N10": {
+      "accuracy": 0.942057650259543,
+      "macro_f1": 0.9344396581676805,
+      "per_class": {
+        "Active": {
+          "precision": 0.9337437766714083,
+          "recall": 0.9687319851499988,
+          "f1-score": 0.9509161488925859,
+          "support": 43367.0
+        },
+        "Other": {
+          "precision": 0.9600332648468839,
+          "recall": 0.8488321799307958,
+          "f1-score": 0.9010146457922042,
+          "support": 23120.0
+        },
+        "Resting": {
+          "precision": 0.9421789969113105,
+          "recall": 0.9607791672134836,
+          "f1-score": 0.951388179818251,
+          "support": 53339.0
+        }
+      }
+    }
+  },
+  "confidence_threshold": {
+    "0.5": {
+      "coverage": 0.9830086959424499,
+      "accuracy_on_confident": 0.964445199083114
+    },
+    "0.6": {
+      "coverage": 0.9613856758967169,
+      "accuracy_on_confident": 0.9732549761716681
+    },
+    "0.7": {
+      "coverage": 0.9368000267053895,
+      "accuracy_on_confident": 0.9799738091632295
+    },
+    "0.8": {
+      "coverage": 0.9044447782618129,
+      "accuracy_on_confident": 0.9857163947737506
+    },
+    "0.9": {
+      "coverage": 0.8397593176772987,
+      "accuracy_on_confident": 0.9910459627329192
+    }
+  },
+  "hierarchical_gating": {
+    "0.4": {
+      "effective_accuracy": 0.9154023333834059,
+      "active_specified_rate": 0.9942583070076325
+    },
+    "0.5": {
+      "effective_accuracy": 0.9075492797890274,
+      "active_specified_rate": 0.9527059745889732
+    },
+    "0.6": {
+      "effective_accuracy": 0.8915594278370303,
+      "active_specified_rate": 0.8829524753845089
+    },
+    "0.7": {
+      "effective_accuracy": 0.868250630080283,
+      "active_specified_rate": 0.7998939285631932
+    },
+    "ungated_17class_reference_accuracy": 0.660290754927979
+  }
+}

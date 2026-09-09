@@ -1,0 +1,87 @@
+{
+  "profile": "cabritrack",
+  "method": "5-fold GroupKFold by animal",
+  "folds": [
+    {
+      "fold": 1,
+      "train_animals": 31,
+      "test_animals": 6,
+      "train_accuracy": 0.9329660608010294,
+      "test_accuracy": 0.8954479652565546,
+      "test_f1": {
+        "Grazing": 0.9894378194207837,
+        "Resting": 0.9002647837599294,
+        "Rumination": 0.8357122865938987,
+        "Walking": 0.5517241379310345
+      }
+    },
+    {
+      "fold": 2,
+      "train_animals": 31,
+      "test_animals": 6,
+      "train_accuracy": 0.9312424607961399,
+      "test_accuracy": 0.8712791633145616,
+      "test_f1": {
+        "Grazing": 0.9775381850853548,
+        "Resting": 0.8661648613915917,
+        "Rumination": 0.8002326257633032,
+        "Walking": 0.46829268292682924
+      }
+    },
+    {
+      "fold": 3,
+      "train_animals": 28,
+      "test_animals": 9,
+      "train_accuracy": 0.9223714906282681,
+      "test_accuracy": 0.9323477422465049,
+      "test_f1": {
+        "Grazing": 0.9828615943910674,
+        "Resting": 0.8843106180665609,
+        "Rumination": 0.8574338085539714,
+        "Walking": 0.4609374999999999
+      }
+    },
+    {
+      "fold": 4,
+      "train_animals": 29,
+      "test_animals": 8,
+      "train_accuracy": 0.9305991154000804,
+      "test_accuracy": 0.9168141592920354,
+      "test_f1": {
+        "Grazing": 0.97984496124031,
+        "Resting": 0.9377626050420168,
+        "Rumination": 0.7915668423574509,
+        "Walking": 0.5034013605442177
+      }
+    },
+    {
+      "fold": 5,
+      "train_animals": 29,
+      "test_animals": 8,
+      "train_accuracy": 0.9200643345396059,
+      "test_accuracy": 0.9293644408688656,
+      "test_f1": {
+        "Grazing": 0.9815899581589959,
+        "Resting": 0.8602739726027397,
+        "Rumination": 0.8989232372351512,
+        "Walking": 0.21989528795811517
+      }
+    }
+  ],
+  "mean_train_accuracy": 0.9274486924330247,
+  "mean_test_accuracy": 0.9090506941957044,
+  "mean_generalization_gap": 0.018397998237320357,
+  "std_test_accuracy": 0.02292332838739494,
+  "mean_test_f1": {
+    "Grazing": 0.9822545036593023,
+    "Resting": 0.8897553681725677,
+    "Rumination": 0.8367737601007551,
+    "Walking": 0.44085019387203933
+  },
+  "std_test_f1": {
+    "Grazing": 0.004011477552413941,
+    "Resting": 0.027822482299292,
+    "Rumination": 0.03916488668869453,
+    "Walking": 0.1150507196358889
+  }
+}

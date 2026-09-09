@@ -1,0 +1,872 @@
+{
+  "reduced_stride_regularity_mild": {
+    "n_samples": 200,
+    "original_flagged_fraction": 0.055,
+    "corrupted_flagged_fraction": 0.065,
+    "example_explanations": [
+      {
+        "corruption": "reduced_stride_regularity_mild",
+        "original": {
+          "anomaly_score": 0.433202224902206,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.23963828057448672,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.43300681672680547,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.5027203341943989
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            },
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 1.3347627955439383
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.22510493549056787,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      },
+      {
+        "corruption": "reduced_stride_regularity_mild",
+        "original": {
+          "anomaly_score": 0.3837377386612474,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.1729994470854304
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.317874486475952,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.389477679578115,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 2.2377391199245245
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 2.0189457655045198
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.0722567169805532
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            },
+            {
+              "feature": "GNeck_z_domfreq",
+              "personal_zscore": -0.7920962093286317
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.28494924095323615,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      }
+    ]
+  },
+  "reduced_stride_regularity_severe": {
+    "n_samples": 200,
+    "original_flagged_fraction": 0.055,
+    "corrupted_flagged_fraction": 0.495,
+    "example_explanations": [
+      {
+        "corruption": "reduced_stride_regularity_severe",
+        "original": {
+          "anomaly_score": 0.433202224902206,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.23963828057448672,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.5820457736291972,
+          "is_anomalous": true,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 7.571865107539747
+            },
+            {
+              "feature": "ANeck_y_rms",
+              "personal_zscore": 6.576799949301134
+            },
+            {
+              "feature": "ANeck_y_std",
+              "personal_zscore": 5.891894240812564
+            },
+            {
+              "feature": "ANeck_y_min",
+              "personal_zscore": -3.360976405971664
+            },
+            {
+              "feature": "GNeck_z_min",
+              "personal_zscore": -2.9053026579077765
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.20494421578024896,
+            "threshold": 0.21739814004994656,
+            "flagged": true,
+            "reason": "gait less regular than usual for this dog during locomotion"
+          },
+          "shaking": null
+        }
+      },
+      {
+        "corruption": "reduced_stride_regularity_severe",
+        "original": {
+          "anomaly_score": 0.3837377386612474,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.1729994470854304
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.317874486475952,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.5355913421329963,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_dompow",
+              "personal_zscore": 4.427589568939072
+            },
+            {
+              "feature": "ANeck_z_domfreq",
+              "personal_zscore": 4.340121638227204
+            },
+            {
+              "feature": "ANeck_z_max",
+              "personal_zscore": 3.1810596996502576
+            },
+            {
+              "feature": "GNeck_x_std",
+              "personal_zscore": 2.8044102684940113
+            },
+            {
+              "feature": "GNeck_x_rms",
+              "personal_zscore": 2.7035186420795867
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.2720122766474824,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      }
+    ]
+  },
+  "amplitude_clipping_mild": {
+    "n_samples": 200,
+    "original_flagged_fraction": 0.055,
+    "corrupted_flagged_fraction": 0.0,
+    "example_explanations": [
+      {
+        "corruption": "amplitude_clipping_mild",
+        "original": {
+          "anomaly_score": 0.433202224902206,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.23963828057448672,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.3926559127299194,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "GNeck_y_mean",
+              "personal_zscore": -1.1255908917075679
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": -1.0873853074357438
+            },
+            {
+              "feature": "GNeck_z_domfreq",
+              "personal_zscore": 1.0580776292685274
+            },
+            {
+              "feature": "ANeck_y_mean",
+              "personal_zscore": -0.9921079415365782
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.3533973278312122,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      },
+      {
+        "corruption": "amplitude_clipping_mild",
+        "original": {
+          "anomaly_score": 0.3837377386612474,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.1729994470854304
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.317874486475952,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.3575522352390994,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -0.9105855906313114
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.8686422961479338
+            },
+            {
+              "feature": "ANeck_y_rms",
+              "personal_zscore": -0.8630755439316519
+            },
+            {
+              "feature": "GNeck_z_domfreq",
+              "personal_zscore": -0.7920962093286317
+            },
+            {
+              "feature": "ANeck_x_mean",
+              "personal_zscore": -0.7762046368351715
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.5285366761532011,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      }
+    ]
+  },
+  "amplitude_clipping_severe": {
+    "n_samples": 200,
+    "original_flagged_fraction": 0.055,
+    "corrupted_flagged_fraction": 0.0,
+    "example_explanations": [
+      {
+        "corruption": "amplitude_clipping_severe",
+        "original": {
+          "anomaly_score": 0.433202224902206,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.23963828057448672,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.38630300208756574,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_y_zcr",
+              "personal_zscore": -2.369866612710965
+            },
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.4435715347328117
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "GNeck_y_mean",
+              "personal_zscore": -1.1255926892798693
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": -1.0873853074357438
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.6783871397481926,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      },
+      {
+        "corruption": "amplitude_clipping_severe",
+        "original": {
+          "anomaly_score": 0.3837377386612474,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.1729994470854304
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.317874486475952,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.36284800441938764,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": -1.8556982916158251
+            },
+            {
+              "feature": "GNeck_y_zcr",
+              "personal_zscore": -1.7944464784253427
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": -1.048093251874293
+            },
+            {
+              "feature": "ANeck_y_rms",
+              "personal_zscore": -0.9172021652504806
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.8686422961479338
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.8160769927564001,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      }
+    ]
+  },
+  "asymmetric_axis_noise_mild": {
+    "n_samples": 200,
+    "original_flagged_fraction": 0.055,
+    "corrupted_flagged_fraction": 0.05,
+    "example_explanations": [
+      {
+        "corruption": "asymmetric_axis_noise_mild",
+        "original": {
+          "anomaly_score": 0.433202224902206,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.23963828057448672,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.4351895667601653,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.7733937545375023
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.4183306449094684
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.2196026563483841,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      },
+      {
+        "corruption": "asymmetric_axis_noise_mild",
+        "original": {
+          "anomaly_score": 0.3837377386612474,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.1729994470854304
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.317874486475952,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.382504594073209,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.066292490467977
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.3277197536546943,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      }
+    ]
+  },
+  "asymmetric_axis_noise_severe": {
+    "n_samples": 200,
+    "original_flagged_fraction": 0.055,
+    "corrupted_flagged_fraction": 0.03,
+    "example_explanations": [
+      {
+        "corruption": "asymmetric_axis_noise_severe",
+        "original": {
+          "anomaly_score": 0.433202224902206,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            },
+            {
+              "feature": "ANeck_x_zcr",
+              "personal_zscore": 1.3495259674480198
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.23963828057448672,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.45206638301054125,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "ANeck_z_zcr",
+              "personal_zscore": 2.2505719571349116
+            },
+            {
+              "feature": "ANeck_x_domfreq",
+              "personal_zscore": 2.14060869411167
+            },
+            {
+              "feature": "GNeck_x_domfreq",
+              "personal_zscore": 1.7341826376640481
+            },
+            {
+              "feature": "GNeck_y_domfreq",
+              "personal_zscore": 1.4704170495113542
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": 1.4134011916296396
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.2106166354415896,
+            "threshold": 0.21739814004994656,
+            "flagged": true,
+            "reason": "gait less regular than usual for this dog during locomotion"
+          },
+          "shaking": null
+        }
+      },
+      {
+        "corruption": "asymmetric_axis_noise_severe",
+        "original": {
+          "anomaly_score": 0.3837377386612474,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -1.1729994470854304
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.317874486475952,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        },
+        "corrupted": {
+          "anomaly_score": 0.38417495116399103,
+          "is_anomalous": false,
+          "top_contributing_features": [
+            {
+              "feature": "GNeck_x_zcr",
+              "personal_zscore": -1.3974513253709355
+            },
+            {
+              "feature": "GNeck_z_zcr",
+              "personal_zscore": 0.985707350272428
+            },
+            {
+              "feature": "ANeck_y_zcr",
+              "personal_zscore": 0.9827067043618509
+            },
+            {
+              "feature": "ANeck_y_dompow",
+              "personal_zscore": -0.868642088443469
+            },
+            {
+              "feature": "ANeck_mag_min",
+              "personal_zscore": -0.8445211170505897
+            }
+          ],
+          "gait": {
+            "regularity_score": 0.36170100227171365,
+            "threshold": 0.21739814004994656,
+            "flagged": false,
+            "reason": null
+          },
+          "shaking": null
+        }
+      }
+    ]
+  }
+}
